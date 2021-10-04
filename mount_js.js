@@ -1,13 +1,9 @@
 let myScene = ['on','off'];
 let i = 1;
-function pew(){
-  mouth.dataset.scene = myScene[i%(myScene.length)]
-  i++;
-}
+
 
 document.body.onscroll = function () {
   let scrollY = window.scrollY;
-  let viewHeight = window.innerHeight;
   document.querySelector("#yyy").innerText = scrollY;
   document.body.style.setProperty("--s", (2000-scrollY) / 500);
   

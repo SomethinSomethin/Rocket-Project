@@ -18,7 +18,7 @@
 }
 p#title{
     margin-left:25%;
-    font-size:4em;
+    font-size:3.5em;
 }
 #post{
     font-size:3em;
@@ -57,7 +57,7 @@ p#title{
 .button{
   	position:absolute;
   	top:1000px;
-  	left: 60px;
+  	left: 50%;
   	opacity:0%;
   	transition: 1s;
   	cursor: pointer;
@@ -211,6 +211,7 @@ p#title{
   	100% {transform: translate(50px, 300px);}
 }
 /*------------------------------------------------กระเพาะ-------------------------------------------------*/
+
 [data-scene="stomach"] .container{
 	background:rgb(246, 192, 186);
 	transition:0.2s;
