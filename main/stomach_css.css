@@ -1,0 +1,153 @@
+#container{
+    background:salmon;
+  }
+  
+  .dropper{
+    width:60px;
+    height:60px;
+    background:blue;
+    position:absolute;
+    left:50%;
+    top:0px;
+    opacity:0%;
+  }
+  
+  #d2{
+    background:red;
+  }
+  
+  .dropping{
+    animation:drop 2s forwards;
+  }
+  
+  .textbox{
+    width:250px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    position:absolute;
+    top:300px;
+    left:800px;
+    opacity:0%;
+    transition:all 1s;
+  }
+  
+  #t2{
+    transition-delay: 0.25s;
+    top:500px;
+    left:-200px;
+  }
+  
+  #stomachwall-left{
+    position:absolute;
+    width:80%;
+    top:0px;
+    left:-50%;
+    transition:1s;
+  }
+  
+  #stomachwall-right{
+    position:absolute;
+    width:80%;
+    top:0px;
+    right:-50%;
+    transition:1s;
+  }
+  
+  #container[data-scene="stomach"] #stomachwall-right{
+    right:0px;
+  }
+  
+  #stomachwall-bottom{
+    position:absolute;
+    width:60%;
+    top:600px;
+    left:-50%;
+    transition:1s;
+  }
+  
+  #container[data-scene="stomach"] #stomachwall-left{
+    left:0px;
+  }
+  
+  #container[data-scene="stomach"] #stomachwall-bottom{
+    left:0px;
+  }
+  
+  #container[data-scene="stomach"] #t1{
+    opacity: 100%;
+    top:500px;
+    right:60px;
+  }
+  
+  #container[data-scene="stomach"] #t2{
+    opacity: 100%;
+    top:700px;
+    left:60px;
+  }
+  
+  #acid{
+    width: 100%;
+    height: 0px;
+    background: linear-gradient( rgba(185,255,150,1) 56%, salmon 100%);
+    position: absolute;
+    transition:1s;
+    transition-delay:0.3s;
+  }
+  
+  #container[data-scene="stomach"] #acid{
+    height:400px;
+    top:1400px;
+    animation: wobble 3s infinite;
+    animation-delay: 1s;
+  }
+  
+  
+  
+  #nutrient {
+    width:800px;
+    height:130px;
+    position:absolute;
+    top:1000px;
+    left:1000px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: 1.3s;
+    padding: 10px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  }
+  
+  #container[data-scene="stomach"] #nutrient{
+    right:60%;
+  }
+  
+  .temp{
+    width:50px;
+    height:50px;
+    display: inline-block;
+    margin-left:10px;
+    margin-right:10px;
+    background: red;
+    border-radius:10px;
+  }
+  .temp:nth-of-type(2){
+    background:skyblue;
+  }
+  .temp:nth-of-type(3){
+    background:green;
+  }
+  .temp:nth-of-type(4){
+    background:violet;
+  }
+  .temp:nth-of-type(5){
+    background:yellow;
+  }
+  
+  @keyframes wobble {
+    20% {top:1300px};
+    40% {top:1400px};
+    60% {top:13500px};
+    80% {top:1400px;};
+  }
+  
+  @keyframes drop {
+    100% {top:1500px; opacity:100%; transform:rotate(50deg)};
+  }
