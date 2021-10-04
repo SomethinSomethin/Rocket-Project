@@ -13,7 +13,7 @@ document.body.onscroll = function () {
     if(scrollY<400 || scrollY<600){
         document.querySelector('#mouth').dataset.scene = "off"; 
     };
-    if(scrollY > 540 && scrollY < 750){
+    if(scrollY > 540 && scrollY < 850){
         document.getElementById("botton").style.opacity= "100%";
     }
     else{
@@ -24,7 +24,14 @@ document.body.onscroll = function () {
         }
         else{
           container.dataset.scene = "other";
-        }   
+        }
+    
+    if(scrollY > 540 && scrollY < 950){
+        document.getElementById("t_m1").style.opacity= "100%";
+    }
+    else{
+        document.getElementById("t_m1").style.opacity= "0%"; 
+    }
     console.log(container.dataset.scene);
 };
 
