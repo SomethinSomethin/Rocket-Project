@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <!--ปาก-->
+    <div id="container" data-scene="other">
+        <div id="mouth" data-scene="off">
+            <br>
+            <p id="title">กว่าจะมาเป็นอึในวันนี้ต้องผ่านอะไรมาบ้าง?</p>
+            <div id="jawUP"><img class="jawUPin" src="https://cdn.discordapp.com/attachments/874526652644884490/884641630420889650/image1.png"> </div>
+            <div id="jawDOWN"> <img class="jawDOWNin" src="https://cdn.discordapp.com/attachments/874526652644884490/886963010004992000/image0.png"></div>
+            <div class="saliva1"></div>
+            <div class="saliva2"></div>
+            <div class="saliva3"></div>
+            <div class="saliva4"></div>
+            <div class="saliva5"></div>
+            <div class="button" id="botton">
+              <a  onclick="pew()">ปล่อยน้ำลาย</a>
+            </div>
+        </div>
+        <div id="post">
+            Y = <span id="yyy">0</span>
+        </div>
+    <!--กระเพาะ-->
+        <div class="dropper" id="d1"></div>
+        <div class="dropper" id="d2"></div>
+        <div class="textbox" id="t1">
+            &emsp; กระเพาะอาหาร เป็นอวัยวะของทางเดินอาหารที่เกี่ยวข้องกับกระบวนการย่อยอาหารที่ผ่านการเคี้ยวภายในช่องปากมาแล้ว กระเพาะอาหารยังเป็นอวัยวะที่มีสภาพแวดล้อมเป็นกรด โดยมักจะมีค่าพีเอชอยู่ที่ประมาณ 1-4 โดยขึ้นกับอาหารที่รับประทานและปัจจัยอื่นๆ นอกจากนี้ในกระเพาะอาหารยังมีการสร้างเอนไซม์เพื่อช่วยในการย่อยอาหารอีกด้วย 
+        </div>
+        <div class="textbox" id="t2">
+            &emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis massa vel elementum iaculis. Aenean vehicula, elit sit amet lacinia tincidunt, orci ligula iaculis risus, id fringilla velit ante consequat elit. Nunc tempus ante non ullamcorper pretium.
+        </div>
+        <image id="stomachwall-left" src="https://cdn.discordapp.com/attachments/874526652644884490/886949361647501382/image0.png">
+        <image id="stomachwall-right" src="https://cdn.discordapp.com/attachments/874526652644884490/886949961651068988/image0.png">
+        <image id="stomachwall-bottom" src="https://cdn.discordapp.com/attachments/874526652644884490/886945003392356352/image0.png">
+        <div id="acid"></div>
+        <div id="wall1"></div>
+        <div class="ans"></div>
+        <div id="nutrient">
+            <p>&emsp;จงเลือกสารอาหารอะไรที่ย่อยได้ในกระเพาะ</p>
+            <div class="temp" onclick="drop(1)"></div>
+            <div class="temp" onclick="drop(2)"></div>
+            <div class="temp" onclick="drop(3)"></div>
+            <div class="temp" onclick="drop(4)"></div>
+            <div class="temp" onclick="drop(5)"></div>
+        </div>
+    <!--ไส้เล็ก-->
+    </div>
+</body>
+</html>
