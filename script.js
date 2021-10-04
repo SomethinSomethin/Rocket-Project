@@ -39,23 +39,28 @@ function drop(type){
     console.log("clicked!");
     console.log(type);
     var correct = [1,2,3];
-    var wrong = [4,5];
     if (correct.includes(type)){
-        var d1 = document.getElementById("d1");
+        var d1 = document.querySelector("#d1")
+        var check = document.querySelector("#check");
+        var img = document.querySelector("#tick");
         d1.classList.add("dropping");
-        console.log(d1.classList);
+        img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600929377124372/KuyYes.png");
+        check.classList.add("float");
         setTimeout(function(){
-        d1.classList.remove("dropping");
-        console.log(d1.classList);
+            d1.classList.remove("dropping");
+            check.classList.remove("float");
         },2000);
     }
     else{
-        var d2 = document.getElementById("d2");
-        d2.classList.add("dropping");
-        console.log(d2.classList);
+        var d1 = document.querySelector("#d2")
+        var check = document.querySelector("#check");
+        var img = document.querySelector("#tick");
+        d1.classList.add("dropping");
+        img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600669649051738/Kuy.png");
+        check.classList.add("float");
         setTimeout(function(){
-            d2.classList.remove("dropping");
-            console.log(d2.classList);
+            d1.classList.remove("dropping");
+            check.classList.remove("float");
         },2000);
     }
 }

@@ -9,8 +9,10 @@
     margin:auto;
     margin-top:30px;
     margin-bottom:30px;
+	transition: all 1s;
 }
 /*-------------------------------------------------ปาก------------------------------------------*/  
+
 :root {
     --y : 0;
     --h : 0;
@@ -228,9 +230,9 @@ p#title{
 }
 /*------------------------------------------------กระเพาะ-------------------------------------------------*/
 
-[data-scene="stomach"] .container{
+#container[data-scene="stomach"]{
 	background:rgb(246, 192, 186);
-	transition:0.2s;
+	transition:1s;
 }
 
 .dropper{
@@ -258,24 +260,42 @@ p#title{
 	width:250px;
 	font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 	position:absolute;
-	top:2500px;
 	opacity:0%;
 	transition:all 1s;
 	transition-delay: 0.25s;
 }
 
 #t1{
-	right:-50%
+	top:2500px;
+	right:-50%;
 }
 
 #t2{
-	left:-50%
+	left:-50%;
+	top:2600px;
+}
+
+#check{
+	position:absolute;
+	top:3100px;
+	left:40%;
+	height:300px;
+	width:300px;
+	opacity: 0%;
+}
+
+#tick{
+	transform: scale(0.5);
+}
+
+.float{
+	animation: mark 2s forwards;
 }
 
 #stomachwall-left{
 	position:absolute;
 	width:80%;
-	top:2000px;
+	top:2100px;
 	left:-50%;
 	transition:1s;
 }
@@ -283,7 +303,7 @@ p#title{
 #stomachwall-right{
 	position:absolute;
 	width:80%;
-	top:2000px;
+	top:2100px;
 	right:-50%;
 	transition:1s;
 }
@@ -300,7 +320,7 @@ p#title{
 	width:800px;
 	height:130px;
 	position:absolute;
-	top:2800px;
+	top:2900px;
 	right:-50%;
 	border: 1px solid white;
 	border-radius: 20px;
@@ -313,7 +333,7 @@ p#title{
 	width: 100%;
 	height: 0px;
 	top:3100px;
-	background: linear-gradient( rgba(185,255,150,1) 56%, salmon 100%);
+	background: linear-gradient( rgba(185,255,150,1) 56%, rgb(246, 192, 186));
 	position: absolute;
 	transition:1s;
 	transition-delay:0.3s;
@@ -359,12 +379,12 @@ p#title{
 
 #container[data-scene="stomach"] #t1{
 	opacity: 100%;
-	right:20%;
+	right:15%;
 }
 
 #container[data-scene="stomach"] #t2{
 	opacity: 100%;
-	left:20%;
+	left:10%;
 }
 
 #container[data-scene="stomach"] #acid{
@@ -375,7 +395,7 @@ p#title{
 }
 
 #container[data-scene="stomach"] #nutrient{
-	right:-35%;
+	right:-30%;
 }
 
 @keyframes wobble {
@@ -388,3 +408,9 @@ p#title{
 @keyframes drop {
 	100% {top:3200px; opacity:100%; transform:rotate(50deg)};
 }
+
+@keyframes mark {
+	100% {top:2800px; opacity: 100%;}
+}
+
+/*------------------------ไส้เล็ก----------------------------*/
