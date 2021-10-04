@@ -59,7 +59,7 @@ p#title{
 .button{
   	position:absolute;
   	top:1000px;
-  	left: 50%;
+  	left: 80%;
   	opacity:0%;
   	transition: 1s;
   	cursor: pointer;
