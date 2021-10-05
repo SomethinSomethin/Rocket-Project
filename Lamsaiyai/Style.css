@@ -12,7 +12,7 @@ body {
 .picture1{
   width: 100vw;
   height: 100vh;
-  background-color:pink;
+  background-color: black;
     background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803250652532756/1.png");
   /* background-repeat: no-repeat; */
   background-size: cover;
@@ -27,7 +27,7 @@ body {
 .picture2{
   width: 100vw;
   height: 100vh;
-  background-color:pink;
+  background-color: black;
     background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803263587745862/2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +36,7 @@ body {
 .picture3{
   width: 100vw;
   height: 100vh;
-  background-color:pink;
+  background-color: black;
     background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803274308415508/3.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@ body {
 .picture4{
   width: 100vw;
   height: 100vh;
-  background-color:pink;
+  background-color: black;
     background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803279261872148/4.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +54,7 @@ body {
 .picture5{
   width: 100vw;
   height: 100vh;
-  background-color:pink;
+  background-color: black;
     background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803291450519592/5.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,8 +64,8 @@ body {
 .picture6{
   width: 100vw;
   height: 100vh;
-  background-color:pink;
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803294810173470/6.png");
+  background-color: black;
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809544381833236/6edit2.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -74,8 +74,8 @@ body {
 .picture7{
   width: 100vw;
   height: 100vh;
-  background-color:pink;
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803336480567316/11.png");
+  background-color: black;
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809444326715422/11edit2.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -84,8 +84,8 @@ body {
 .picture8{
   width: 100vw;
   height: 100vh;
-  background-color:pink;
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803300812218418/7.png");
+  background-color: black;
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809510378631168/7edit2.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
