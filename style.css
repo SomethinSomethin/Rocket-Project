@@ -1,0 +1,472 @@
+/*------------------------- main container ---------------------------------*/
+
+#container {
+    height: 10000px;
+    width: 90%;
+    border-radius: 20px;
+    background: rgb(196, 251, 249);
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: all 1s;
+}
+
+
+/*-------------------------------------------------ปาก------------------------------------------*/
+
+:root {
+    --y: 0;
+    --h: 0;
+    --s: 0;
+}
+
+p#title {
+    margin-left: 25%;
+    font-size: 3.5em;
+}
+
+#post {
+    font-size: 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fffc;
+}
+
+#mouth {
+    height: 2000px;
+    widows: 100%;
+    position: relative;
+    margin: auto;
+    width: 60%;
+    /* left: 50%; */
+    /* justify-content: center; */
+}
+
+#jawUP {
+    width: 50vw;
+    height: 30vw;
+    /* left: 30%; */
+    top: 10%;
+    transform: scale(calc((var(--h) + 1)));
+    position: absolute;
+    text-align: center;
+}
+
+.jawUPin {
+    width: 100%;
+}
+
+.jawDOWNin {
+    width: 100%;
+}
+
+#jawDOWN {
+    width: 50vw;
+    height: 30vw;
+    /* left: 30%; */
+    position: absolute;
+    top: calc(( var(--y) + 20) * 10px);
+    transform: scale(calc((var(--h) + 1)));
+}
+
+.button {
+    background-color: #4c8baf;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    top: 55vw;
+    left: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #3768c2;
+}
+
+.button1:hover {
+    background-color: #209be2;
+    color: white;
+}
+
+.text_m {
+    width: 250px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    position: absolute;
+    top: 800px;
+    /* opacity:0%; */
+    transition: all 1s;
+    transition-delay: 0.25s;
+    left: 0.2vw;
+}
+
+.saliva1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: blue;
+    top: calc(( var(--y) + 20) * 10px);
+    left: 50%;
+    position: absolute;
+    transition: 2s;
+    animation: sal;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.saliva2 {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    background-color: blue;
+    top: calc(( var(--y) + 20) * 10px);
+    left: 40%;
+    position: absolute;
+    transition: 2s;
+    animation: sal 3s infinite;
+}
+
+.saliva3 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    background-color: blue;
+    top: calc(( var(--y) + 20) * 10px);
+    left: 30%;
+    position: absolute;
+    transition: 2s;
+    animation: sal1 2s infinite;
+}
+
+.saliva4 {
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 100%;
+    background-color: blue;
+    top: calc(( var(--y) + 20) * 10px);
+    left: 70%;
+    position: absolute;
+    transition: 2s;
+    animation: sal 5s infinite;
+}
+
+.saliva5 {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    background-color: blue;
+    top: calc(( var(--y) + 20) * 10px);
+    left: 20%;
+    position: absolute;
+    transition: 2s;
+    animation: sal1 5s infinite;
+}
+
+#control_text[data-scene="acc"] .t_m1 {
+    opacity: 100%;
+}
+
+#control_text[data-scene="dis"] .t_m1 {
+    opacity: 0%;
+}
+
+#mouth[data-scene="on"] .saliva1 {
+    opacity: 100%;
+}
+
+#mouth[data-scene="off"] .saliva1 {
+    opacity: 0%;
+}
+
+#mouth[data-scene="on"] .saliva2 {
+    opacity: 100%;
+}
+
+#mouth[data-scene="off"] .saliva2 {
+    opacity: 0%;
+}
+
+#mouth[data-scene="on"] .saliva3 {
+    opacity: 100%;
+}
+
+#mouth[data-scene="off"] .saliva3 {
+    opacity: 0%;
+}
+
+#mouth[data-scene="on"] .saliva4 {
+    opacity: 100%;
+}
+
+#mouth[data-scene="off"] .saliva4 {
+    opacity: 0%;
+}
+
+#mouth[data-scene="on"] .saliva5 {
+    opacity: 100%;
+}
+
+#mouth[data-scene="off"] .saliva5 {
+    opacity: 0%;
+}
+
+
+/* #mouth[data-scene="off"] .button{
+  	opacity:100%;
+}
+#mouth[data-scene="on"] .button{
+  	opacity:0%;
+} */
+
+@keyframes sal {
+    0% {
+        transform: translate(100px, 500px);
+    }
+    25% {
+        transform: translate(70px, 120px);
+    }
+    50% {
+        transform: translate(130px, 170px);
+    }
+    100% {
+        transform: translate(100px, 500px);
+    }
+}
+
+@keyframes sal1 {
+    0% {
+        transform: translate(50px, 300px);
+    }
+    25% {
+        transform: translate(70px, 120px);
+    }
+    50% {
+        transform: translate(100px, 200px);
+    }
+    100% {
+        transform: translate(50px, 300px);
+    }
+}
+
+
+/*------------------------------------------------กระเพาะ-------------------------------------------------*/
+
+#container[data-scene="stomach"] {
+    background: rgb(246, 192, 186);
+    transition: 1s;
+}
+
+.dropper {
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    opacity: 0%;
+}
+
+#d1 {
+    background: blue;
+}
+
+#d2 {
+    background: red;
+}
+
+.dropping {
+    animation: drop 2s forwards;
+}
+
+.textbox {
+    width: 250px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    position: absolute;
+    opacity: 0%;
+    transition: all 1s;
+    transition-delay: 0.25s;
+}
+
+#t1 {
+    top: 2500px;
+    right: -50%;
+}
+
+#t2 {
+    left: -50%;
+    top: 2600px;
+}
+
+#check {
+    position: absolute;
+    top: 3100px;
+    left: 40%;
+    height: 300px;
+    width: 300px;
+    opacity: 0%;
+}
+
+#tick {
+    transform: scale(0.5);
+}
+
+.float {
+    animation: mark 2s forwards;
+}
+
+#stomachwall-left {
+    position: absolute;
+    width: 80%;
+    top: 2100px;
+    left: -50%;
+    transition: 1s;
+}
+
+#stomachwall-right {
+    position: absolute;
+    width: 80%;
+    top: 2100px;
+    right: -50%;
+    transition: 1s;
+}
+
+#stomachwall-bottom {
+    position: absolute;
+    width: 60%;
+    top: 2300px;
+    left: -50%;
+    transition: 1s;
+}
+
+#nutrient {
+    width: 800px;
+    height: 130px;
+    position: absolute;
+    top: 2900px;
+    right: -50%;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: 1.3s;
+    padding: 10px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+#acid {
+    width: 100%;
+    height: 0px;
+    top: 3100px;
+    background: linear-gradient( rgba(185, 255, 150, 1) 56%, rgb(246, 192, 186));
+    position: absolute;
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+
+.temp {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: red;
+    border-radius: 10px;
+}
+
+.temp:nth-of-type(2) {
+    background: skyblue;
+}
+
+.temp:nth-of-type(3) {
+    background: green;
+}
+
+.temp:nth-of-type(4) {
+    background: violet;
+}
+
+.temp:nth-of-type(5) {
+    background: yellow;
+}
+
+#container[data-scene="stomach"] #stomachwall-right {
+    right: 0px;
+}
+
+#container[data-scene="stomach"] #stomachwall-left {
+    left: 0px;
+}
+
+#container[data-scene="stomach"] #stomachwall-bottom {
+    left: 0px;
+}
+
+#container[data-scene="stomach"] #t1 {
+    opacity: 100%;
+    right: 15%;
+}
+
+#container[data-scene="stomach"] #t2 {
+    opacity: 100%;
+    left: 10%;
+}
+
+#container[data-scene="stomach"] #acid {
+    height: 400px;
+    top: 3100px;
+    animation: wobble 3s infinite;
+    animation-delay: 1s;
+}
+
+#container[data-scene="stomach"] #nutrient {
+    right: -30%;
+}
+
+@keyframes wobble {
+    20% {
+        top: 3200px
+    }
+    ;
+    40% {
+        top: 3100px
+    }
+    ;
+    60% {
+        top: 3200px
+    }
+    ;
+    80% {
+        top: 3100px;
+    }
+    ;
+}
+
+@keyframes drop {
+    100% {
+        top: 3200px;
+        opacity: 100%;
+        transform: rotate(50deg)
+    }
+    ;
+}
+
+@keyframes mark {
+    100% {
+        top: 2800px;
+        opacity: 100%;
+    }
+}
+
+
+/*------------------------ไส้เล็ก----------------------------*/
