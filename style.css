@@ -77,7 +77,7 @@ p#title {
 }
 
 .button {
-    background-color: #4c8baf;
+    background-color: rgb(196, 251, 249);
     /* Green */
     border: none;
     color: white;
@@ -96,7 +96,7 @@ p#title {
 }
 
 .button1 {
-    background-color: white;
+    background-color: rgb(196, 251, 249);
     color: black;
     border: 2px solid #3768c2;
 }
