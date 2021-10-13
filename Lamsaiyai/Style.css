@@ -3,7 +3,14 @@ body {
   font-size: 4rem;
   font-family: arial;
 }
-
+.container {
+  width: 100%;
+  max-width: 1900px;
+  min-width: 1200px;
+}
+.bigpic{
+  width: 100%;
+}
 .v-box {
   min-width: 100vw;
   min-height: 100vh;
