@@ -15,6 +15,7 @@ body {
     overflow: hidden;
     margin: auto;
     transition: all 1s;
+	text-align: center;
 }
 
 
@@ -27,7 +28,6 @@ body {
 }
 
 p#title {
-    margin-left: 25%;
     font-size: 3.5em;
 }
 
