@@ -1,14 +1,16 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
 /*------------------------- main container ---------------------------------*/
 #container{
     height:10000px;
-    width:90%;
+    width:100%;
     border-radius:20px;
     background:rgb(196, 251, 249);
     position:relative;
     overflow:hidden;
     margin:auto;
-    margin-top:30px;
-    margin-bottom:30px;
 	transition: all 1s;
 }
 /*-------------------------------------------------ปาก------------------------------------------*/  
