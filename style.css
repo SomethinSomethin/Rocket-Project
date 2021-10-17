@@ -15,7 +15,7 @@ body {
     overflow: hidden;
     margin: auto;
     transition: all 1s;
-	text-align: center;
+    text-align: center;
 }
 
 
@@ -276,6 +276,44 @@ p#title {
     100% {
         transform: translate(50px, 300px);
     }
+}
+
+
+/*------------------------------------------------หลอดอาหาร-------------------------------------------------*/
+
+#esophagus {
+    width: 100%;
+    position: relative;
+}
+
+#eso_img_l {
+    width: 20%;
+    position: absolute;
+    /* left: 0%; */
+    transition: all 0.5s;
+}
+
+#eso_img_r {
+    width: 20%;
+    position: absolute;
+    /* right: 0%; */
+    transition: all 0.5s;
+}
+
+#esophagus[data-scene="acc"] #eso_img_l {
+    left: -50%;
+}
+
+#esophagus[data-scene="dis"] #eso_img_l {
+    left: 0%;
+}
+
+#esophagus[data-scene="acc"] #eso_img_r {
+    right: -50%;
+}
+
+#esophagus[data-scene="dis"] #eso_img_r {
+    right: 0%;
 }
 
 

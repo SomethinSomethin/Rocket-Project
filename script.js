@@ -5,6 +5,8 @@ document.body.onscroll = function() {
     newY = window.scrollY;
     console.log(newY);
     document.querySelector("#yyy").innerText = scrollY;
+    let x = document.querySelector("#container");
+    console.log(x.dataset)
     document.body.style.setProperty("--s", (2000 - scrollY) / 500);
     if (scrollY <= 600) {
         document.body.style.setProperty("--y", scrollY / 9);
@@ -29,7 +31,18 @@ document.body.onscroll = function() {
     } else {
         document.getElementById("t_m1").style.opacity = "0%";
     }
-    console.log(container.dataset.scene);
+    // console.log(container.dataset.scene);
+
+
+    var condi_eso = document.getElementById("esophagus");
+    var condi_esoTop = condi_eso.offsetTop;
+    console.log(condi_esoTop);
+    if (scrollY + window.innerHeight - (condi_eso.offsetHeight - 200) >= condi_esoTop && scrollY < condi_esoTop) {
+        document.querySelector(".eso").dataset.scene = "acc";
+
+    } else {
+        document.querySelector(".eso").dataset.scene = "dis";
+    }
 };
 
 function drop(type) {
