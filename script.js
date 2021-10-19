@@ -16,14 +16,14 @@ document.body.onscroll = function() {
     if (scrollY < 400 || scrollY < 600) {
         document.querySelector('#mouth').dataset.scene = "off";
     };
-    if (scrollY > 540 && scrollY < 850) {
+    if (scrollY > 440 && scrollY < 850) {
         document.getElementById("botton1").style.opacity = "100%";
     } else {
         document.getElementById("botton1").style.opacity = "0%";
     }
     if (newY >= 3000 && newY <= 3600) {
         container.dataset.scene = "stomach";
-    } else if (newY >= 1500 && newY <= 2300) {
+    } else if (newY >= 1500 && newY <= 3000) {
         container.dataset.scene = "esophagus";
     } else {
         container.dataset.scene = "other";
@@ -36,7 +36,7 @@ document.body.onscroll = function() {
     // หลอดอหาร
     var condi_eso = document.getElementById("esophagus");
     var condi_esoTop = condi_eso.offsetTop;
-    console.log(scrollY + window.innerHeight - (condi_eso.offsetHeight));
+    // console.log(scrollY + window.innerHeight - (condi_eso.offsetHeight));
     if (scrollY < condi_esoTop - 300) {
         document.querySelector(".eso").dataset.scene = "acc";
         document.getElementById("mouth").style.opacity = "100%";
