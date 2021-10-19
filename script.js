@@ -7,6 +7,7 @@ document.body.onscroll = function() {
     document.querySelector("#yyy").innerText = scrollY;
     let x = document.querySelector("#container");
     console.log(x.dataset)
+        // ปาก
     document.body.style.setProperty("--s", (2000 - scrollY) / 500);
     if (scrollY <= 600) {
         document.body.style.setProperty("--y", scrollY / 9);
@@ -25,7 +26,7 @@ document.body.onscroll = function() {
     } else {
         container.dataset.scene = "other";
     }
-
+    // หลอดอหาร
     if (scrollY > 540 && scrollY < 950) {
         document.getElementById("t_m1").style.opacity = "100%";
     } else {
@@ -36,15 +37,15 @@ document.body.onscroll = function() {
 
     var condi_eso = document.getElementById("esophagus");
     var condi_esoTop = condi_eso.offsetTop;
-    console.log(condi_esoTop);
-    if (scrollY + window.innerHeight - (condi_eso.offsetHeight - 200) >= condi_esoTop && scrollY < condi_esoTop) {
+    console.log(scrollY + window.innerHeight - (condi_eso.offsetHeight));
+    if (scrollY < condi_esoTop - 300) {
         document.querySelector(".eso").dataset.scene = "acc";
 
     } else {
         document.querySelector(".eso").dataset.scene = "dis";
     }
 };
-
+// กระเพอาะ
 function drop(type) {
     console.log("clicked!");
     console.log(type);

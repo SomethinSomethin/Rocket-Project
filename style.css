@@ -284,6 +284,7 @@ p#title {
 #esophagus {
     width: 100%;
     position: relative;
+    /* height: 700px; */
 }
 
 #eso_img_l {
@@ -314,6 +315,17 @@ p#title {
 
 #esophagus[data-scene="dis"] #eso_img_r {
     right: 0%;
+}
+
+.text_s {
+    width: 30%;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    position: absolute;
+    top: 40%;
+    /* opacity:0%; */
+    transition: all 1s;
+    transition-delay: 0.25s;
+    left: 10%;
 }
 
 
@@ -437,19 +449,19 @@ p#title {
     background-color: rgb(246, 255, 198);
 }
 
-.temp:nth-child(2){
+.temp:nth-child(2) {
     background: rgb(126, 158, 120);
 }
 
-.temp:nth-child(3){
+.temp:nth-child(3) {
     background: rgb(255, 178, 106);
 }
 
-.temp:nth-child(4){
+.temp:nth-child(4) {
     background: rgb(255, 93, 93);
 }
 
-.temp:nth-child(5){
+.temp:nth-child(5) {
     background: rgb(149, 255, 255);
 }
 
