@@ -37,6 +37,7 @@ p#title {
     top: 0;
     left: 0;
     background: #fffc;
+    z-index: 2;
 }
 
 #mouth {
