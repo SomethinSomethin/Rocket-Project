@@ -23,25 +23,36 @@ document.body.onscroll = function() {
     }
     if (newY >= 3000 && newY <= 3600) {
         container.dataset.scene = "stomach";
+    } else if (newY >= 1500 && newY <= 2300) {
+        container.dataset.scene = "esophagus";
+    } else {
+        container.dataset.scene = "other";
     }
-    // หลอดอหาร
     if (scrollY > 540 && scrollY < 950) {
         document.getElementById("t_m1").style.opacity = "100%";
     } else {
         document.getElementById("t_m1").style.opacity = "0%";
     }
-    // console.log(container.dataset.scene);
-
-
+    // หลอดอหาร
     var condi_eso = document.getElementById("esophagus");
     var condi_esoTop = condi_eso.offsetTop;
     console.log(scrollY + window.innerHeight - (condi_eso.offsetHeight));
     if (scrollY < condi_esoTop - 300) {
         document.querySelector(".eso").dataset.scene = "acc";
+        document.getElementById("mouth").style.opacity = "100%";
+        document.getElementById("t_s").style.opacity = "0%";
+
 
     } else {
         document.querySelector(".eso").dataset.scene = "dis";
+        document.getElementById("mouth").style.opacity = "0%";
+        document.getElementById("t_s").style.opacity = "100%";
     }
+    // if (scrollY > 540 && scrollY < 950) {
+    //     document.getElementById("t_m2").style.opacity = "100%";
+    // } else {
+    //     document.getElementById("t_m2").style.opacity = "0%";
+    // }
 };
 // กระเพอาะ
 function drop(type) {
