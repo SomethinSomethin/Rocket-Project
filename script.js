@@ -41,12 +41,20 @@ document.body.onscroll = function() {
         document.querySelector(".eso").dataset.scene = "acc";
         document.getElementById("mouth").style.opacity = "100%";
         document.getElementById("t_s").style.opacity = "0%";
+        document.getElementById("food1").style.opacity = "0%";
+        document.getElementById("food2").style.opacity = "0%";
+        document.getElementById("food3").style.opacity = "0%";
+        document.getElementById("food4").style.opacity = "0%";
 
 
     } else {
         document.querySelector(".eso").dataset.scene = "dis";
         document.getElementById("mouth").style.opacity = "0%";
         document.getElementById("t_s").style.opacity = "100%";
+        document.getElementById("food1").style.opacity = "100%";
+        document.getElementById("food2").style.opacity = "100%";
+        document.getElementById("food3").style.opacity = "100%";
+        document.getElementById("food4").style.opacity = "100%";
     }
     // if (scrollY > 540 && scrollY < 950) {
     //     document.getElementById("t_m2").style.opacity = "100%";
