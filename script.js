@@ -21,10 +21,8 @@ document.body.onscroll = function() {
     } else {
         document.getElementById("botton1").style.opacity = "0%";
     }
-    if (newY >= 2300 && newY <= 3500) {
+    if (newY >= 3000 && newY <= 3600) {
         container.dataset.scene = "stomach";
-    } else {
-        container.dataset.scene = "other";
     }
     // หลอดอหาร
     if (scrollY > 540 && scrollY < 950) {
@@ -51,25 +49,25 @@ function drop(type) {
     console.log(type);
     var correct = [1, 2, 3];
     if (correct.includes(type)) {
-        var d1 = document.querySelector("#d1")
+        var d = document.querySelector("#d" + type);
         var check = document.querySelector("#check");
         var img = document.querySelector("#tick");
-        d1.classList.add("dropping");
+        d.classList.add("dropping");
         img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600929377124372/KuyYes.png");
         check.classList.add("float");
         setTimeout(function() {
-            d1.classList.remove("dropping");
+            d.classList.remove("dropping");
             check.classList.remove("float");
         }, 2000);
     } else {
-        var d1 = document.querySelector("#d2")
+        var d = document.querySelector("#d" + type);
         var check = document.querySelector("#check");
         var img = document.querySelector("#tick");
-        d1.classList.add("dropping");
+        d.classList.add("dropping");
         img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600669649051738/Kuy.png");
         check.classList.add("float");
         setTimeout(function() {
-            d1.classList.remove("dropping");
+            d.classList.remove("dropping");
             check.classList.remove("float");
         }, 2000);
     }
