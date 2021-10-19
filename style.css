@@ -334,6 +334,7 @@ p#title {
     left: 10%;
     font-size: 4rem;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index: 2;
 }
 
 .text_s2 {
@@ -346,11 +347,79 @@ p#title {
     transition-delay: 0.25s;
     left: 10%;
     font-size: 2rem;
+    z-index: 2;
 }
 
 #container[data-scene="esophagus"] {
     background: rgb(230, 178, 172);
     transition: 1s;
+}
+
+#food1 {
+    width: 100%;
+}
+
+.item1 {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 50%;
+    animation: spin 2s infinite linear;
+}
+
+#food2 {
+    width: 100%;
+}
+
+.item2 {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 30%;
+    animation: spin 3s infinite linear;
+}
+
+#food3 {
+    width: 100%;
+}
+
+.item3 {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 60%;
+    animation: spin 4s infinite linear;
+}
+
+#food4 {
+    width: 100%;
+}
+
+.item4 {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 20%;
+    animation: spin 2.3s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        top: 0%;
+        opacity: 0%;
+        transform: rotate(0deg)
+    }
+    10% {
+        opacity: 100%;
+    }
+    90% {
+        opacity: 100%;
+    }
+    100% {
+        top: 100%;
+        opacity: 0%;
+        transform: rotate(360deg)
+    }
 }
 
 
