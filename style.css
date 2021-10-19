@@ -434,7 +434,23 @@ p#title {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: rgb(246, 255, 198);
+}
+
+.temp:nth-child(2){
+    background: rgb(126, 158, 120);
+}
+
+.temp:nth-child(3){
+    background: rgb(255, 178, 106);
+}
+
+.temp:nth-child(4){
+    background: rgb(255, 93, 93);
+}
+
+.temp:nth-child(5){
+    background: rgb(149, 255, 255);
 }
 
 #container[data-scene="stomach"] #stomachwall-right {
