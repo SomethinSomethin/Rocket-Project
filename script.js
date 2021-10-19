@@ -21,7 +21,7 @@ document.body.onscroll = function() {
     } else {
         document.getElementById("botton1").style.opacity = "0%";
     }
-    if (newY >= 3000 && newY <= 3600) {
+    if (newY >= 2500 && newY <= 3900) {
         container.dataset.scene = "stomach";
     } else if (newY >= 1500 && newY <= 3000) {
         container.dataset.scene = "esophagus";
