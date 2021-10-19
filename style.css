@@ -355,13 +355,13 @@ p#title {
 }
 
 #t1 {
-    top: 2500px;
+    top: 3350px;
     right: -50%;
 }
 
 #t2 {
     left: -50%;
-    top: 2600px;
+    top: 3250px;
 }
 
 #check {
@@ -384,7 +384,7 @@ p#title {
 #stomachwall-left {
     position: absolute;
     width: 80%;
-    top: 2100px;
+    top: 2800px;
     left: -50%;
     transition: 1s;
 }
@@ -392,7 +392,7 @@ p#title {
 #stomachwall-right {
     position: absolute;
     width: 80%;
-    top: 2100px;
+    top: 2800px;
     right: -50%;
     transition: 1s;
 }
@@ -400,58 +400,41 @@ p#title {
 #stomachwall-bottom {
     position: absolute;
     width: 60%;
-    top: 2300px;
+    top: 2800px;
     left: -50%;
     transition: 1s;
 }
 
 #nutrient {
-    width: 800px;
-    height: 130px;
+    width: 400px;
+    height: 50px;
     position: absolute;
-    top: 2900px;
-    right: -50%;
+    top: 3550px;
+    left: -50%;
     border: 1px solid white;
     border-radius: 20px;
     transition: 1.3s;
-    padding: 10px;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
 #acid {
     width: 100%;
     height: 0px;
-    top: 3100px;
+    top: 3800px;
     background: linear-gradient( rgba(185, 255, 150, 1) 56%, rgb(246, 192, 186));
     position: absolute;
-    transition: 1s;
+    transition: 0.3s;
     transition-delay: 0.3s;
 }
 
 .temp {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
-    background: red;
     border-radius: 10px;
-}
-
-.temp:nth-of-type(2) {
-    background: skyblue;
-}
-
-.temp:nth-of-type(3) {
-    background: green;
-}
-
-.temp:nth-of-type(4) {
-    background: violet;
-}
-
-.temp:nth-of-type(5) {
-    background: yellow;
+    background-color: aliceblue;
 }
 
 #container[data-scene="stomach"] #stomachwall-right {
@@ -468,7 +451,7 @@ p#title {
 
 #container[data-scene="stomach"] #t1 {
     opacity: 100%;
-    right: 15%;
+    right: 12%;
 }
 
 #container[data-scene="stomach"] #t2 {
@@ -478,32 +461,31 @@ p#title {
 
 #container[data-scene="stomach"] #acid {
     height: 400px;
-    top: 3100px;
+    top: 3800px;
     animation: wobble 3s infinite;
     animation-delay: 1s;
 }
 
 #container[data-scene="stomach"] #nutrient {
-    right: -30%;
+    left: 20%;
 }
 
 @keyframes wobble {
     20% {
-        top: 3200px
+        top: 3725px
     }
     ;
     40% {
-        top: 3100px
+        top: 3750px
     }
     ;
     60% {
-        top: 3200px
+        top: 3725px
     }
     ;
     80% {
-        top: 3100px;
+        top: 3750px;
     }
-    ;
 }
 
 @keyframes drop {
@@ -512,7 +494,6 @@ p#title {
         opacity: 100%;
         transform: rotate(50deg)
     }
-    ;
 }
 
 @keyframes mark {

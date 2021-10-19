@@ -20,7 +20,7 @@ document.body.onscroll = function() {
     } else {
         document.getElementById("botton1").style.opacity = "0%";
     }
-    if (newY >= 2000 && newY <= 3500) {
+    if (newY >= 2300 && newY <= 3500) {
         container.dataset.scene = "stomach";
     } else {
         container.dataset.scene = "other";
