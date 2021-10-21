@@ -22,6 +22,10 @@
     display: flex;
     flex-direction: row-reverse;
   }
+  #js-slideContainer4{
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .section {
     height: 100vh;
     width: calc(100% / 5);
@@ -46,16 +50,27 @@
   }
   .section3 {
     height: 100vh;
-    width: 100%;
+    width: calc(100% / 5);
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-size: cover;
     float: left;
   }
   .section4 {
+    height: 100vh;
+    width: calc(100% / 5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    float: left;
+  }
+  .section-first {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -65,6 +80,19 @@
     align-items: center;
     background-size: cover;
     float: left;
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900021306832068678/1edit2.png");
+  }
+  .section-end {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    float: left;
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803343023693864/12.png");
   }
   #Bac1 {
     width: 100%;
@@ -186,12 +214,7 @@
     }
   }
   
-  .section3:nth-child(1) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900021306832068678/1edit2.png");
-  }
-  .section4:nth-child(1) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803343023693864/12.png");
-  }
+
   .section:nth-child(1) {
     background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803263587745862/2.png");
   }
@@ -223,6 +246,38 @@
   .section2:nth-child(5) {
     background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809510378631168/7edit2.png");
   }
+
+  .section3:nth-child(1) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803263587745862/2.png");
+  }
+  .section3:nth-child(2) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803274308415508/3.png");
+  }
+  .section3:nth-child(3) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803279261872148/4.png");
+  }
+  .section3:nth-child(4) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803291450519592/5.png");
+  }
+  .section3:nth-child(5) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809544381833236/6edit2.png");
+  }
+  
+  .section4:nth-child(1) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809444326715422/11edit2.png");
+  }
+  .section4:nth-child(2) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803291450519592/5.png");
+  }
+  .section4:nth-child(3) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803279261872148/4.png"  );
+  }
+  .section4:nth-child(4) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803274308415508/3.png");
+  }
+  .section4:nth-child(5) {
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809510378631168/7edit2.png");
+  }
   
   .layer {
     background-color: rgb(255 12 12 / 20%);
@@ -234,7 +289,12 @@
     width: 100%;
     height: 100%;
   }
-  
+  .content-nochange {
+    width: 50%;
+    color: #fff;
+    position: relative;
+    text-align: center;
+  }
   .content {
     width: 50%;
     color: #fff;
@@ -242,6 +302,18 @@
     text-align: center;
   }
   .content2 {
+    width: 50%;
+    color: #fff;
+    position: relative;
+    text-align: center;
+  }
+  .content3 {
+    width: 50%;
+    color: #fff;
+    position: relative;
+    text-align: center;
+  }
+  .content4 {
     width: 50%;
     color: #fff;
     position: relative;
