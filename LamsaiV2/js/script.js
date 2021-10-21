@@ -6,9 +6,8 @@ const controller2 = new ScrollMagic.Controller();
 
 const t1 = new TimelineMax();
 const t2 = new TimelineMax();
-
+t1.from(content[0], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -20 });
-t1.from(content[1], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -40 });
 t1.from(content[2], 0.5, { opacity: 0, scale: 2.5, left: 400, top: 400 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -60 });
