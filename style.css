@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
 
@@ -94,6 +95,7 @@ p#title {
     left: 80%;
     position: absolute;
     z-index: 2;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
 .button1 {
@@ -543,7 +545,8 @@ p#title {
     background-color: rgb(246, 255, 198);
     transition: 0.3s;
 }
-.temp:hover{
+
+.temp:hover {
     transform: scale(1.2);
 }
 
