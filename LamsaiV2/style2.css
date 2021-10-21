@@ -82,6 +82,125 @@ html {
   float: left;
 }
 
+#Bac1 {
+  width: 100%;
+}
+
+.Bacteria1 {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top:50%;
+  left: 10%;
+  animation: up-down1 10s infinite ;
+}
+
+#Bac2 {
+  width: 100%;
+}
+
+.Bacteria2 {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top:30%;
+  left: 40%;
+  animation: up-down2 10s infinite ;
+}
+
+#Bac3 {
+  width: 100%;
+}
+
+.Bacteria3 {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top:70%;
+  left: 70%;
+  animation: up-down3 10s infinite ;
+}
+
+#Bac4 {
+  width: 100%;
+}
+
+.Bacteria4 {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 90%;
+  animation: up-down4 10s infinite ;
+}
+@keyframes up-down4 {
+  0% {
+    top:10%;
+  }
+  25%{
+    top:15%;
+  }
+  50%{
+    top:10%;
+  }
+  75%{
+    top:15%;
+  }
+  100% {
+    top:10%;
+  }
+}
+@keyframes up-down3 {
+  0% {
+    top:70%;
+  }
+  25%{
+    top:65%;
+  }
+  50%{
+    top:70%;
+  }
+  75%{
+    top:65%;
+  }
+  100% {
+    top:70%;
+  }
+}
+@keyframes up-down2 {
+  0% {
+    top:30%;
+  }
+  25%{
+    top:35%;
+  }
+  50%{
+    top:30%;
+  }
+  75%{
+    top:35%;
+  }
+  100% {
+    top:30%;
+  }
+}
+
+@keyframes up-down1 {
+  0% {
+    top:50%;
+  }
+  25%{
+    top:40%;
+  }
+  50%{
+    top:50%;
+  }
+  75%{
+    top:40%
+  }
+  100% {
+    top:50%;
+  }
+}
 .section3:nth-child(1) {
   background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900021306832068678/1edit2.png");
 }
