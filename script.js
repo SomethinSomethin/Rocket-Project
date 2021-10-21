@@ -28,7 +28,7 @@ document.body.onscroll = function() {
     } else {
         container.dataset.scene = "other";
     }
-    if (scrollY > 540 && scrollY < 950) {
+    if (scrollY > 440 && scrollY < 950) {
         document.getElementById("t_m1").style.opacity = "100%";
     } else {
         document.getElementById("t_m1").style.opacity = "0%";
