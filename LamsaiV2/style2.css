@@ -81,11 +81,11 @@ html {
   background-size: cover;
   float: left;
 }
-#food1 {
+#Bac1 {
   width: 100%;
 }
 
-.item1 {
+.Bacteria1 {
   width: 10%;
   height: 10%;
   position: absolute;
@@ -94,11 +94,11 @@ html {
   animation: up-down1 10s infinite ;
 }
 
-#food2 {
+#Bac2 {
   width: 100%;
 }
 
-.item2 {
+.Bacteria2 {
   width: 10%;
   height: 10%;
   position: absolute;
@@ -107,11 +107,11 @@ html {
   animation: up-down2 10s infinite ;
 }
 
-#food3 {
+#Bac3 {
   width: 100%;
 }
 
-.item3 {
+.Bacteria3 {
   width: 10%;
   height: 10%;
   position: absolute;
@@ -120,11 +120,11 @@ html {
   animation: up-down3 10s infinite ;
 }
 
-#food4 {
+#Bac4 {
   width: 100%;
 }
 
-.item4 {
+.Bacteria4 {
   width: 10%;
   height: 10%;
   position: absolute;
