@@ -338,10 +338,10 @@ p#title {
 }
 
 .text_s {
-    width: 30%;
+    width: 28%;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     position: absolute;
-    top: 20%;
+    top: 45%;
     /* opacity:0%; */
     transition: all 1.5s;
     transition-delay: 0.25s;
@@ -355,7 +355,7 @@ p#title {
     width: 30%;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     position: absolute;
-    top: 35%;
+    top: 60%;
     /* opacity:0%; */
     transition: all 1.5s;
     transition-delay: 0.25s;
