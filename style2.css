@@ -94,6 +94,30 @@
     float: left;
     background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803343023693864/12.png");
   }
+  .section-first-small {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    float: left;
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666489231769650/S1.png");
+  }
+  .section-end-small {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    float: left;
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666711454416896/S12.png");
+  }
   #Bac1 {
     width: 100%;
   }
@@ -248,35 +272,35 @@
   }
 
   .section3:nth-child(1) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803263587745862/2.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666505107222558/S2.png");
   }
   .section3:nth-child(2) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803274308415508/3.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666520802299914/S3.png");
   }
   .section3:nth-child(3) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803279261872148/4.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666559809355776/S4.png");
   }
   .section3:nth-child(4) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803291450519592/5.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666588825522186/S5.png");
   }
   .section3:nth-child(5) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809544381833236/6edit2.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666616910602260/S6.png");
   }
   
   .section4:nth-child(1) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809444326715422/11edit2.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666637810794496/S7.png");
   }
   .section4:nth-child(2) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803291450519592/5.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666652067246140/S8.png");
   }
   .section4:nth-child(3) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803279261872148/4.png"  );
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666679799980062/S9.png"  );
   }
   .section4:nth-child(4) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803274308415508/3.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666690034073610/S10.png");
   }
   .section4:nth-child(5) {
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809510378631168/7edit2.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666701207732224/S11.png");
   }
   
   .layer {
