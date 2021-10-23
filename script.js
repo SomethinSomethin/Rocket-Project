@@ -33,7 +33,7 @@ document.body.onscroll = function() {
     } else {
         document.getElementById("t_m1").style.opacity = "0%";
     }
-    // หลอดอหาร
+    // หลอดอาหาร
     var condi_eso = document.getElementById("esophagus");
     var condi_esoTop = condi_eso.offsetTop;
     // console.log(scrollY + window.innerHeight - (condi_eso.offsetHeight));
@@ -61,8 +61,21 @@ document.body.onscroll = function() {
     // } else {
     //     document.getElementById("t_m2").style.opacity = "0%";
     // }
+
+    // ไส้เล็ก
+    var check_lamsailek = document.getElementById("lamsailek");
+    var lamsaiTop = check_lamsailek.offsetTop;
+    if (scrollY > lamsaiTop - 500 && scrollY < lamsaiTop +1000) {
+        document.querySelector("#lamsailek").dataset.scene = "turn_on";
+        console.log("Jim",lamsaiTop)
+    }
+    else{
+        document.querySelector("#lamsailek").dataset.scene = "turn_off";
+    }
+
+
 };
-// กระเพอาะ
+// กระเพาะ
 function drop(type) {
     console.log("clicked!");
     console.log(type);
@@ -72,18 +85,18 @@ function drop(type) {
         var check = document.querySelector("#check");
         var img = document.querySelector("#tick");
         d.classList.add("dropping");
-        img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600929377124372/KuyYes.png");
+        img.setAttribute("src", "IMG/right.png");
         check.classList.add("float");
         setTimeout(function() {
             d.classList.remove("dropping");
             check.classList.remove("float");
-        }, 2000);
+        }, 2000);z
     } else {
         var d = document.querySelector("#d" + type);
         var check = document.querySelector("#check");
         var img = document.querySelector("#tick");
         d.classList.add("dropping");
-        img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600669649051738/Kuy.png");
+        img.setAttribute("src", "IMG/wrong.png");
         check.classList.add("float");
         setTimeout(function() {
             d.classList.remove("dropping");
