@@ -2,6 +2,7 @@
 let myScene = ['on', 'off'];
 let i = 1;
 document.body.onscroll = function() {
+    let viewHeight = window.innerHeight;
     newY = window.scrollY;
     console.log(newY);
     document.querySelector("#yyy").innerText = scrollY;
@@ -61,6 +62,25 @@ document.body.onscroll = function() {
     // } else {
     //     document.getElementById("t_m2").style.opacity = "0%";
     // }
+    // กระเพาะ ---> ลำไส้เล็ก
+    var lek = document.getElementById("lek");
+    var lektop = lek.offsetTop;
+
+    if (scrollY + viewHeight - 1000 >= lektop) {
+        document.querySelector("#lek").dataset.active = 1;
+    } else {
+    document.querySelector("#lek").dataset.active = 0;
+    }
+    // ส่วนลำไส้เล็ก ---> ใหญ่
+        var lekpaiyai = document.getElementById("lekpaiyai");
+        var lekpaiyaitop = lekpaiyai.offsetTop;
+
+        if (scrollY + viewHeight - 1000 >= lekpaiyaitop) {
+            document.querySelector("#lekpaiyai").dataset.active = 1;
+        } else {
+        document.querySelector("#lekpaiyai").dataset.active = 0;
+        }
+        
 };
 // กระเพอาะ
 function drop(type) {
@@ -72,18 +92,18 @@ function drop(type) {
         var check = document.querySelector("#check");
         var img = document.querySelector("#tick");
         d.classList.add("dropping");
-        img.setAttribute("src", "IMG/right.png");
+        img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600929377124372/KuyYes.png");
         check.classList.add("float");
         setTimeout(function() {
             d.classList.remove("dropping");
             check.classList.remove("float");
-        }, 2000);z
+        }, 2000);
     } else {
         var d = document.querySelector("#d" + type);
         var check = document.querySelector("#check");
         var img = document.querySelector("#tick");
         d.classList.add("dropping");
-        img.setAttribute("src", "IMG/wrong.png");
+        img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600669649051738/Kuy.png");
         check.classList.add("float");
         setTimeout(function() {
             d.classList.remove("dropping");
@@ -117,7 +137,7 @@ const t4 = new TimelineMax();
 t3.from(content3[0], 0.5, { opacity: 0, scale: 2.5 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -20 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -40 });
-t3.from(content3[1], 0.5, { opacity: 0, scale: 2.5 });
+t3.from(content3[1], 0.5, { opacity: 0, scale: 2.5, rotation: 27 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -60 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -80 });
 t3.from(content3[2], 0.5, { opacity: 0, scale: 2.5 });
