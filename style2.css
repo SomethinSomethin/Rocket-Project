@@ -366,3 +366,21 @@
       width: 80%;
     }
   }
+
+
+#lek[data-active="0"] .wrapper {
+    background-color: rgb(236, 142, 142);
+      transition: all 0.7s;
+}
+#lek[data-active="1"] .wrapper {
+  background-color: rgb(202, 183, 183);
+  transition: all 0.7s;
+}
+#lekpaiyai[data-active="0"] .wrapper {
+  background-color: rgb(202, 183, 183);
+  transition: all 0.7s;
+}
+#lekpaiyai[data-active="1"] .wrapper {
+  background-color: rgb(236, 142, 142);
+    transition: all 0.7s;
+}

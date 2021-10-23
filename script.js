@@ -2,6 +2,7 @@
 let myScene = ['on', 'off'];
 let i = 1;
 document.body.onscroll = function() {
+    let viewHeight = window.innerHeight;
     newY = window.scrollY;
     console.log(newY);
     document.querySelector("#yyy").innerText = scrollY;
@@ -61,6 +62,25 @@ document.body.onscroll = function() {
     // } else {
     //     document.getElementById("t_m2").style.opacity = "0%";
     // }
+    // กระเพาะ ---> ลำไส้เล็ก
+    var lek = document.getElementById("lek");
+    var lektop = lek.offsetTop;
+
+    if (scrollY + viewHeight - 1000 >= lektop) {
+        document.querySelector("#lek").dataset.active = 1;
+    } else {
+    document.querySelector("#lek").dataset.active = 0;
+    }
+    // ส่วนลำไส้เล็ก ---> ใหญ่
+        var lekpaiyai = document.getElementById("lekpaiyai");
+        var lekpaiyaitop = lekpaiyai.offsetTop;
+
+        if (scrollY + viewHeight - 1000 >= lekpaiyaitop) {
+            document.querySelector("#lekpaiyai").dataset.active = 1;
+        } else {
+        document.querySelector("#lekpaiyai").dataset.active = 0;
+        }
+        
 };
 // กระเพอาะ
 function drop(type) {
