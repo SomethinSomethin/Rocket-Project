@@ -1,8 +1,3 @@
-.container {
-  width: 100%;
-  max-width: 1900px;
-  min-width: 1200px;
-}
 .wrapper {
     width: 100%;
     height: 100%;
@@ -85,7 +80,7 @@
     align-items: center;
     background-size: cover;
     float: left;
-    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900021306832068678/1edit2.png");
+    background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666489231769650/S1.png");
   }
   .section-end {
     height: 100vh;
