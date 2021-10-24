@@ -82,7 +82,7 @@ document.body.onscroll = function() {
         }
         
 };
-// กระเพอาะ
+// กระเพาะ
 function drop(type) {
     console.log("clicked!");
     console.log(type);

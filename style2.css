@@ -398,8 +398,9 @@
     width: 80%;
   }
 }
-
-
+#yai .wrapper{
+  background-color: rgb(202, 183, 183);
+}
 #lek[data-active="0"] .wrapper {
   background-color: #f6c0ba;
     transition: all 0.7s;
