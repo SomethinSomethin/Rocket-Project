@@ -71,11 +71,6 @@ document.body.onscroll = function() {
     } else {
     document.querySelector("#lek").dataset.active = 0;
     }
-    if (scrollY + viewHeight - 800 >= lek2) {
-        document.querySelector("#lek2").dataset.active = 1;
-    } else {
-    document.querySelector("#lek2").dataset.active = 0;
-    }
     // ส่วนลำไส้เล็ก ---> ใหญ่
         var lekpaiyai = document.getElementById("lekpaiyai");
         var lekpaiyaitop = lekpaiyai.offsetTop;
