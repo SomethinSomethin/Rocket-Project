@@ -65,10 +65,10 @@ document.body.onscroll = function() {
     // กระเพาะ ---> ลำไส้เล็ก
     var lek = document.getElementById("lek");
     var lektop = lek.offsetTop;
-    var lek2 = document.getElementById("lek2").offsetTop;
     if (scrollY + viewHeight - 800 >= lektop) {
         document.querySelector("#lek").dataset.active = 1;
-    } else {
+    }
+    else {
     document.querySelector("#lek").dataset.active = 0;
     }
     // ส่วนลำไส้เล็ก ---> ใหญ่
