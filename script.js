@@ -175,10 +175,9 @@ new ScrollMagic.Scene({
 t1.from(content[0], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -20 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -40 });
-t1.from(content[1], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -60 });
+t1.from(content[1], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -80 });
-t1.from(content[2], 0.5, { opacity: 0, scale: 2.5 });
 
 new ScrollMagic.Scene({
   triggerElement: "#js-wrapper",
@@ -194,6 +193,7 @@ new ScrollMagic.Scene({
 
 
 t2.to("#js-slideContainer2", 0.5, { xPercent: 20 });
+t2.from(content2[0], 0.5, { opacity: 0, scale: 2.5 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 40 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 60 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 80 });
