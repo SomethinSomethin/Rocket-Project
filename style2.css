@@ -387,12 +387,17 @@ background-color: rgb(236, 142, 142);
 
 .teststicky {
   padding-top: -300px; 
-  width: 320px; 
-  height: 550px; 
-  padding-left: 650px;
+  width: 280px; 
+  height: 400px; 
+  padding-left: 40%;
   position: -webkit-sticky; 
   position: sticky; 
   top: 50;
   z-index: 1; 
   padding-top: 10%;
+  opacity: 1.0;
+}
+
+.teststicky:hover {
+  opacity: 0.2;
 }
