@@ -136,11 +136,10 @@ const t4 = new TimelineMax();
 
 t3.from(content3[0], 0.5, { opacity: 0, scale: 2.5 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -20 });
+t3.from(content3[1], 0.5, { opacity: 0, scale: 2.5, left: 400, top: 400 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -40 });
-t3.from(content3[1], 0.5, { opacity: 0, scale: 2.5, rotation: 27 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -60 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -80 });
-t3.from(content3[2], 0.5, { opacity: 0, scale: 2.5 });
 
 new ScrollMagic.Scene({
   triggerElement: "#js-wrapper3",
