@@ -735,6 +735,13 @@
   position: relative;
   text-align: center;
 }
+.content-tude {
+  width: 50%;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  opacity: 0;
+}
 .content {
   width: 50%;
   color: #fff;
@@ -779,13 +786,29 @@
 .sectionTitle-up{
   font-size: 10em;
 }
+.sectionTitle-tude {
+  font-size: 30px;
+  font-weight: 400;
+}
 .medium-size{
   font-size: 30px;
 }
 .small-size{
   font-size: 30px;
 }
-
+.shit{
+  display: block;
+  width: 35%;
+  height: 10%;
+  left: 50%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* animation: verti 5s linear infinite ;
+  animation-delay: 5s;
+  opacity: 0; */
+}
 @media all and (max-width: 768px) {
   .content {
     width: 80%;
@@ -834,6 +857,50 @@ background-color: rgb(202, 183, 183);
 #lekpaiyai[data-active="1"] .sectionTitle-lamsai  {
     transform: scale(2);
     transition: all 0.6s;
+}
+
+#tude{
+  background-color: rgb(202, 183, 183);
+}
+#tude[data-active="0"]  {
+  background-color: rgb(202, 183, 183);
+  transition: all 0.6s;
+}
+#tude[data-active="1"]  {
+  background-color: white;
+  transition: all 0.6s;
+}
+
+#shit[data-active="0"] .content-nochange {
+  transition: all 0.8s;
+  transform: scale(0);
+  opacity: 0;
+}
+#shit[data-active="1"] .content-nochange {
+  transition: all 0.8s;
+  transform: scale(1);
+  color: black;
+  opacity: 1;
+}
+
+#shit2[data-active="0"] .shit {
+  transition: all 8s;
+  top:0%;
+}
+#shit2[data-active="1"] .shit {
+  transition: all 8s;
+  top:100%;
+}
+#freedom[data-active="0"].content-tude {
+  transition: all 0.8s;
+  transform: scale(0);
+  opacity: 0;
+}
+#freedom[data-active="1"] .content-tude {
+  transition: all 0.8s;
+  transform: scale(1);
+  color: black;
+  opacity: 1;
 }
 .teststicky {
   width: 280px; 
