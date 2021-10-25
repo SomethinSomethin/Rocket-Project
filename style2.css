@@ -576,15 +576,15 @@
   font-weight: 400;
 }
 .sectionTitle-lamsai {
-  font-size: 50px;
-  color:rgb(250, 81, 62);
-  font-weight: bolder;
+  font-size: 30px;
+  font-weight: 400;
 }
 .sectionTitle-up{
   font-size: 50px;
 }
 .medium-size{
-  font-size: 30px;}
+  font-size: 30px;
+}
 .small-size{
   font-size: 30px;
 }
@@ -620,9 +620,8 @@ transition: all 0.6s;
 }
 #lek[data-active="1"] .sectionTitle-lamsai  {
   transform: scale(2);
-  transition: all 0.6s;  
+  transition: all 0.6s;
 }
-
 #lekpaiyai[data-active="0"] .wrapper {
 background-color: rgb(236, 142, 142);
 transition: all 0.7s;
