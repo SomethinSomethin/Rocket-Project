@@ -66,7 +66,7 @@ document.body.onscroll = function() {
     var lek = document.getElementById("lek");
     var lektop = lek.offsetTop;
 
-    if (scrollY + viewHeight - 1000 >= lektop) {
+    if (scrollY + viewHeight - 650 >= lektop) {
         document.querySelector("#lek").dataset.active = 1;
     } else {
     document.querySelector("#lek").dataset.active = 0;
@@ -75,7 +75,7 @@ document.body.onscroll = function() {
         var lekpaiyai = document.getElementById("lekpaiyai");
         var lekpaiyaitop = lekpaiyai.offsetTop;
 
-        if (scrollY + viewHeight - 1000 >= lekpaiyaitop) {
+        if (scrollY + viewHeight - 650 >= lekpaiyaitop) {
             document.querySelector("#lekpaiyai").dataset.active = 1;
         } else {
         document.querySelector("#lekpaiyai").dataset.active = 0;
