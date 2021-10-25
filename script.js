@@ -66,7 +66,7 @@ document.body.onscroll = function() {
     var lek = document.getElementById("lek");
     var lektop = lek.offsetTop;
 
-    if (scrollY + viewHeight - 1000 >= lektop) {
+    if (scrollY + viewHeight - 650 >= lektop) {
         document.querySelector("#lek").dataset.active = 1;
     } else {
     document.querySelector("#lek").dataset.active = 0;
@@ -75,7 +75,7 @@ document.body.onscroll = function() {
         var lekpaiyai = document.getElementById("lekpaiyai");
         var lekpaiyaitop = lekpaiyai.offsetTop;
 
-        if (scrollY + viewHeight - 1000 >= lekpaiyaitop) {
+        if (scrollY + viewHeight - 650 >= lekpaiyaitop) {
             document.querySelector("#lekpaiyai").dataset.active = 1;
         } else {
         document.querySelector("#lekpaiyai").dataset.active = 0;
@@ -136,11 +136,12 @@ const t4 = new TimelineMax();
 
 t3.from(content3[0], 0.5, { opacity: 0, scale: 2.5 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -20 });
+t3.from(content3[1], 0.5, { opacity: 0, scale: 2.5, left: 400, top: 400 });
 t3.to("#js-slideContainer3", 0.5, { xPercent: -40 });
-t3.from(content3[1], 0.5, { opacity: 0, scale: 2.5, rotation: 27 });
-t3.to("#js-slideContainer3", 0.5, { xPercent: -60 });
-t3.to("#js-slideContainer3", 0.5, { xPercent: -80 });
 t3.from(content3[2], 0.5, { opacity: 0, scale: 2.5 });
+t3.to("#js-slideContainer3", 0.5, { xPercent: -60 });
+t3.from(content3[3], 0.5, { opacity: 0, scale: 2.5, right: 400, bottom: 400 });
+t3.to("#js-slideContainer3", 0.5, { xPercent: -80 });
 
 new ScrollMagic.Scene({
   triggerElement: "#js-wrapper3",
@@ -156,6 +157,7 @@ new ScrollMagic.Scene({
 t4.to("#js-slideContainer4", 0.5, { xPercent: 20 });
 t4.to("#js-slideContainer4", 0.5, { xPercent: 40 });
 t4.to("#js-slideContainer4", 0.5, { xPercent: 60 });
+t4.from(content4[0], 0.5, { opacity: 0, scale: 2.5 });
 t4.to("#js-slideContainer4", 0.5, { xPercent: 80 });
 
 new ScrollMagic.Scene({
@@ -173,10 +175,9 @@ new ScrollMagic.Scene({
 t1.from(content[0], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -20 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -40 });
-t1.from(content[1], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -60 });
+t1.from(content[1], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -80 });
-t1.from(content[2], 0.5, { opacity: 0, scale: 2.5 });
 
 new ScrollMagic.Scene({
   triggerElement: "#js-wrapper",
@@ -192,6 +193,7 @@ new ScrollMagic.Scene({
 
 
 t2.to("#js-slideContainer2", 0.5, { xPercent: 20 });
+t2.from(content2[0], 0.5, { opacity: 0, scale: 2.5 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 40 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 60 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 80 });

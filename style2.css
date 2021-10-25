@@ -3,6 +3,12 @@
   height: 100%;
   overflow: hidden;
 }
+.wrapper-tude{
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+  background-color: rgb(236, 142, 142);
+}
 .sections {
   width: 500%;
   height: 100%;
@@ -69,6 +75,18 @@
   align-items: center;
   background-size: cover;
   float: left;
+}
+.tude{
+  height: 200vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  float: left;
+  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900672612244520971/image0.png");
 }
 .section-first {
   height: 100vh;
@@ -163,6 +181,408 @@
   position: absolute;
   left: 90%;
   animation: up-down4 10s infinite ;
+}
+
+.water1{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 10%;
+  animation: willdis1 10s infinite ;
+}
+.water2{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 40%;
+  animation: willdis2 8s infinite ;
+}
+.water3{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 70%;
+  animation: willdis3 7s infinite ;
+}
+.water4{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 90%;
+  animation: willdis4 9s infinite ;
+}
+.water5{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 25%;
+  animation: willdis5 6s infinite ;
+}
+.water6{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 25%;
+  animation: willdis6 5s infinite ;
+}
+.water7{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 85%;
+  animation: willdis7 8s infinite ;
+}
+.teinlek1{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 25%;
+  animation: next 5s linear infinite ;
+  opacity: 0;
+}
+.teinlek2{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 25%;
+  animation: next 5s linear infinite ;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.teinlek3{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 25%;
+  animation: next 5s linear infinite ;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.teinlek4{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 25%;
+  animation: next 5s linear infinite ;
+  animation-delay: 3s;
+  opacity: 0;
+}
+.vertical1{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.vertical2{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.vertical3{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 3s;
+  opacity: 0;
+}
+.vertical4{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.vertical5{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 5s;
+  opacity: 0;
+}
+@keyframes verti {
+  0% {
+    opacity: 0;
+    top:0%;
+    left: 15%;
+  }
+  25%{
+    opacity: 1;
+    top:25%;
+    left: 15%;
+  }
+  50%{
+    opacity: 1;
+    top:50%;
+    left: 15%;
+  }
+  75%{
+    opacity: 1;
+    top:67.5%;
+    left: 15%;
+  }
+  100% {
+    top: 67.5%;
+    left: 0%;
+    opacity:0;
+  }
+}
+.travel1{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.travel2{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.travel3{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 3s;
+  opacity: 0;
+}
+.travel4{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.travel5{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 5s;
+  opacity: 0;
+}
+@keyframes nextback {
+  0% {
+    opacity: 0;
+    top:65%;
+    right: 0%;
+  }
+  25%{
+    opacity: 1;
+    top:70%;
+    right: 22.5%;
+  }
+  50%{
+    opacity: 1;
+    top:65%;
+    right: 45%;
+  }
+  75%{
+    opacity: 1;
+    top:75%;
+    right: 67.5%;
+  }
+  100% {
+    top:65%;
+    right: 90%;
+    opacity: 0;
+  }
+}
+@keyframes next {
+  0% {
+    opacity: 0;
+    top:65%;
+    left: 0%;
+  }
+  25%{
+    opacity: 1;
+    top:70%;
+    left: 22.5%;
+  }
+  50%{
+    opacity: 1;
+    top:65%;
+    left: 45%;
+  }
+  75%{
+    opacity: 1;
+    top:75%;
+    left: 67.5%;
+  }
+  100% {
+    top:65%;
+    left: 90%;
+    opacity: 0;
+  }
+}
+@keyframes willdis1 {
+  0% {
+    opacity: 0;
+    top:10%;
+  }
+  25%{
+    top:15%;
+    opacity: 0;
+  }
+  50%{
+    top:10%;
+    opacity: 1;
+  }
+  75%{
+    top:15%;
+    opacity: 1;
+  }
+  100% {
+    top:10%;
+    opacity: 0;
+  }
+}
+@keyframes willdis2 {
+  0% {
+    opacity: 0;
+    top:70%;
+  }
+  25%{
+    top:65%;
+    opacity: 0;
+  }
+  50%{
+    top:70%;
+    opacity: 1;
+  }
+  75%{
+    top:65%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top:70%;
+  }
+}
+@keyframes willdis3 {
+  0% {
+    
+    top:30%;
+    opacity: 0;
+  }
+  25%{
+    top:35%;
+    opacity: 0;
+  }
+  50%{
+    top:30%;
+    opacity: 1;
+  }
+  75%{
+    top:35%;
+    opacity: 1;
+  }
+  100% {
+    top:30%;
+    opacity: 0;
+  }
+}
+
+@keyframes willdis4 {
+  0% {
+    top:50%;
+    opacity: 0;
+  }
+  25%{
+    top:40%;
+    opacity: 0;
+  }
+  50%{
+    top:50%;
+    opacity: 1;
+  }
+  75%{
+    top:40%;
+    opacity: 1;
+  }
+  100% {
+    top:50% ;
+    opacity: 0;
+  }
+}
+@keyframes willdis5 {
+  0% {
+    top:60%;
+    opacity: 0;
+  }
+  25%{
+    top:55%;
+    opacity: 0;
+  }
+  50%{
+    top:60%;
+    opacity: 1;
+  }
+  75%{
+    top:55%;
+    opacity: 1;
+  }
+  100% {
+    top:60% ;
+    opacity: 0;
+  }
+}
+@keyframes willdis6 {
+  0% {
+    top:20%;
+    opacity: 0;
+  }
+  25%{
+    top:25%;
+    opacity: 0;
+  }
+  50%{
+    top:20%;
+    opacity: 1;
+  }
+  75%{
+    top:25%;
+    opacity: 1;
+  }
+  100% {
+    top:20% ;
+    opacity: 0;
+  }
+}
+@keyframes willdis7 {
+  0% {
+    top:20%;
+    opacity: 0;
+  }
+  25%{
+    top:25%;
+    opacity: 0;
+  }
+  50%{
+    top:20%;
+    opacity: 1;
+  }
+  75%{
+    top:25%;
+    opacity: 1;
+  }
+  100% {
+    top:20% ;
+    opacity: 0;
+  }
 }
 @keyframes up-down4 {
   0% {
@@ -347,9 +767,22 @@
 }
 
 .sectionTitle {
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 0;
   font-weight: 400;
+}
+.sectionTitle-lamsai {
+  font-size: 30px;
+  font-weight: 400;
+}
+.sectionTitle-up{
+  font-size: 50px;
+}
+.medium-size{
+  font-size: 30px;
+}
+.small-size{
+  font-size: 30px;
 }
 
 @media all and (max-width: 768px) {
@@ -366,21 +799,38 @@
     width: 80%;
   }
 }
-
-
+#yai .wrapper{
+  background-color: rgb(202, 183, 183);
+}
 #lek[data-active="0"] .wrapper {
-  background-color: rgb(236, 142, 142);
+  background-color: #f6c0ba;
     transition: all 0.7s;
 }
 #lek[data-active="1"] .wrapper {
-background-color: rgb(202, 183, 183);
-transition: all 0.7s;
+  background-color: rgb(236, 142, 142);
+  transition: all 0.7s;
+}
+#lek[data-active="0"] .sectionTitle-lamsai {
+transform: scale(0);
+transition: all 0.6s;
+}
+#lek[data-active="1"] .sectionTitle-lamsai  {
+  transform: scale(2);
+  transition: all 0.6s;
 }
 #lekpaiyai[data-active="0"] .wrapper {
-background-color: rgb(202, 183, 183);
+background-color: rgb(236, 142, 142);
 transition: all 0.7s;
 }
 #lekpaiyai[data-active="1"] .wrapper {
-background-color: rgb(236, 142, 142);
+background-color: rgb(202, 183, 183);
   transition: all 0.7s;
+}
+#lekpaiyai[data-active="0"] .sectionTitle-lamsai {
+  transform: scale(0);
+  transition: all 0.6s;
+}
+#lekpaiyai[data-active="1"] .sectionTitle-lamsai  {
+    transform: scale(2);
+    transition: all 0.6s;
 }
