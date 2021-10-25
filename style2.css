@@ -384,3 +384,15 @@ transition: all 0.7s;
 background-color: rgb(236, 142, 142);
   transition: all 0.7s;
 }
+
+.teststicky {
+  padding-top: -300px; 
+  width: 320px; 
+  height: 550px; 
+  padding-left: 650px;
+  position: -webkit-sticky; 
+  position: sticky; 
+  top: 50;
+  z-index: 1; 
+  padding-top: 10%;
+}
