@@ -38,8 +38,10 @@ body {
 }
 
 p#title {
-    font-size: 2.6em;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size:5em;
+    font-weight: bolder;
+    color:white;
+    text-shadow: 2px 2px 2px black;
     text-align: center;
 }
 
@@ -113,12 +115,15 @@ p#title {
 .button1 {
     background-color: rgb(196, 251, 249);
     color: black;
-    border: 2px solid #3768c2;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: 3px solid #3768c2;
 }
 
 .button1:hover {
     background-color: #209be2;
     color: white;
+    border-radius: 30px;
 }
 
 .text_m {
@@ -127,9 +132,11 @@ p#title {
     position: absolute;
     top: 50%;
     /* opacity:0%; */
-    transition: all 1s;
-    transition-delay: 0.25s;
+    transition: all 0.3s;
     left: 10%;
+    font-size:25px;
+    font-weight: bold;
+    color: rgb(20, 21, 87);
 }
 
 .text_m2 {
@@ -138,10 +145,12 @@ p#title {
     position: absolute;
     top: 60%;
     /* opacity:0%; */
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     transition: all 1s;
     transition-delay: 0.25s;
     left: 50%;
+    color: rgb(20, 21, 87);
+    padding-top:10px;
 }
 
 .saliva1 {
@@ -346,8 +355,11 @@ p#title {
     transition: all 1.5s;
     transition-delay: 0.25s;
     left: 35%;
-    font-size: 4rem;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bolder;
+    font-size: 5rem;
+    color:rgb(240, 86, 69);
+    text-shadow: 2px 2px 2px rgb(255, 25, 0);
+    text-align: center;
     z-index: 2;
 }
 
@@ -359,8 +371,10 @@ p#title {
     /* opacity:0%; */
     transition: all 1.5s;
     transition-delay: 0.25s;
+    text-align: center;
     left: 35%;
-    font-size: 2rem;
+    color:rgb(240, 86, 69);
+    font-size: 2.5rem;
     z-index: 2;
 }
 
@@ -551,8 +565,8 @@ p#title {
 }
 
 .temp {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     margin-top: 10px;
     margin-left: 10px;
