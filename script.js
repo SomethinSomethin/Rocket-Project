@@ -65,7 +65,7 @@ document.body.onscroll = function() {
     // กระเพาะ ---> ลำไส้เล็ก
     var lek = document.getElementById("lek");
     var lektop = lek.offsetTop;
-    if (scrollY + viewHeight - 800 >= lektop) {
+    if (scrollY + viewHeight - 700 >= lektop) {
         document.querySelector("#lek").dataset.active = 1;
     }
     else {
@@ -75,7 +75,7 @@ document.body.onscroll = function() {
         var lekpaiyai = document.getElementById("lekpaiyai");
         var lekpaiyaitop = lekpaiyai.offsetTop;
 
-        if (scrollY + viewHeight - 1000 >= lekpaiyaitop) {
+        if (scrollY + viewHeight - 700 >= lekpaiyaitop) {
             document.querySelector("#lekpaiyai").dataset.active = 1;
         } else {
         document.querySelector("#lekpaiyai").dataset.active = 0;
@@ -173,8 +173,8 @@ new ScrollMagic.Scene({
 t1.from(content[0], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -20 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -40 });
-t1.from(content[1], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -60 });
+t1.from(content[1], 0.5, { opacity: 0, scale: 2.5 });
 t1.to("#js-slideContainer", 0.5, { xPercent: -80 });
 t1.from(content[2], 0.5, { opacity: 0, scale: 2.5 });
 
