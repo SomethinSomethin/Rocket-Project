@@ -466,7 +466,7 @@ p#title {
 }
 
 .textbox {
-    width: 250px;
+    width: 300px;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     position: absolute;
     opacity: 0%;
@@ -481,10 +481,22 @@ p#title {
 }
 
 #t2 {
-    width: 50%;
-    max-width: 600px;
     left: -50%;
-    top: 400px;
+    top: 370px;
+    transition-delay: 0.3s;
+}
+#t3 {
+    left: -50%;
+    top: 590px;
+    transition-delay: 0.6s;
+}
+#title{
+    top:400px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #check {
@@ -602,6 +614,19 @@ p#title {
 #container[data-scene="stomach"] #t2 {
     opacity: 100%;
     left: 10%;
+}
+#container[data-scene="stomach"] #t3 {
+    opacity: 100%;
+    left: 15%;
+}
+
+#container[data-scene="stomach"] #t2 {
+    opacity: 100%;
+    left: 10%;
+}
+
+#container[data-scene="stomach"] #title {
+    opacity: 100%;
 }
 
 #container[data-scene="stomach"] #acid {
