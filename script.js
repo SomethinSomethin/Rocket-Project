@@ -192,6 +192,7 @@ new ScrollMagic.Scene({
 
 
 t2.to("#js-slideContainer2", 0.5, { xPercent: 20 });
+t2.from(content2[0], 0.5, { opacity: 0, scale: 2.5, right: 400, bottom: 400 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 40 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 60 });
 t2.to("#js-slideContainer2", 0.5, { xPercent: 80 });
