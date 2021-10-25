@@ -269,7 +269,7 @@
 }
 @keyframes next {
   0% {
-    opacity: 1;
+    opacity: 0;
     top:65%;
     left: 0%;
   }
@@ -291,7 +291,7 @@
   100% {
     top:65%;
     left: 90%;
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes willdis1 {
