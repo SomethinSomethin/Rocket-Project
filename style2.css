@@ -182,6 +182,212 @@
   left: 90%;
   animation: up-down4 10s infinite ;
 }
+
+.water1{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 10%;
+  animation: willdis1 10s infinite ;
+}
+.water2{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 40%;
+  animation: willdis2 8s infinite ;
+}
+.water3{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 70%;
+  animation: willdis3 7s infinite ;
+}
+.water4{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 90%;
+  animation: willdis4 9s infinite ;
+}
+.water5{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 25%;
+  animation: willdis5 6s infinite ;
+}
+.water6{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 25%;
+  animation: willdis6 5s infinite ;
+}
+.water7{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 85%;
+  animation: willdis7 8s infinite ;
+}
+@keyframes willdis1 {
+  0% {
+    opacity: 0;
+    top:10%;
+  }
+  25%{
+    top:15%;
+    opacity: 0;
+  }
+  50%{
+    top:10%;
+    opacity: 1;
+  }
+  75%{
+    top:15%;
+    opacity: 1;
+  }
+  100% {
+    top:10%;
+    opacity: 0;
+  }
+}
+@keyframes willdis2 {
+  0% {
+    opacity: 0;
+    top:70%;
+  }
+  25%{
+    top:65%;
+    opacity: 0;
+  }
+  50%{
+    top:70%;
+    opacity: 1;
+  }
+  75%{
+    top:65%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top:70%;
+  }
+}
+@keyframes willdis3 {
+  0% {
+    
+    top:30%;
+    opacity: 0;
+  }
+  25%{
+    top:35%;
+    opacity: 0;
+  }
+  50%{
+    top:30%;
+    opacity: 1;
+  }
+  75%{
+    top:35%;
+    opacity: 1;
+  }
+  100% {
+    top:30%;
+    opacity: 0;
+  }
+}
+
+@keyframes willdis4 {
+  0% {
+    top:50%;
+    opacity: 0;
+  }
+  25%{
+    top:40%;
+    opacity: 0;
+  }
+  50%{
+    top:50%;
+    opacity: 1;
+  }
+  75%{
+    top:40%;
+    opacity: 1;
+  }
+  100% {
+    top:50% ;
+    opacity: 0;
+  }
+}
+@keyframes willdis5 {
+  0% {
+    top:60%;
+    opacity: 0;
+  }
+  25%{
+    top:55%;
+    opacity: 0;
+  }
+  50%{
+    top:60%;
+    opacity: 1;
+  }
+  75%{
+    top:55%;
+    opacity: 1;
+  }
+  100% {
+    top:60% ;
+    opacity: 0;
+  }
+}
+@keyframes willdis6 {
+  0% {
+    top:20%;
+    opacity: 0;
+  }
+  25%{
+    top:25%;
+    opacity: 0;
+  }
+  50%{
+    top:20%;
+    opacity: 1;
+  }
+  75%{
+    top:25%;
+    opacity: 1;
+  }
+  100% {
+    top:20% ;
+    opacity: 0;
+  }
+}
+@keyframes willdis7 {
+  0% {
+    top:20%;
+    opacity: 0;
+  }
+  25%{
+    top:25%;
+    opacity: 0;
+  }
+  50%{
+    top:20%;
+    opacity: 1;
+  }
+  75%{
+    top:25%;
+    opacity: 1;
+  }
+  100% {
+    top:20% ;
+    opacity: 0;
+  }
+}
 @keyframes up-down4 {
   0% {
     top:10%;
