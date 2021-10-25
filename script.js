@@ -157,6 +157,7 @@ new ScrollMagic.Scene({
 t4.to("#js-slideContainer4", 0.5, { xPercent: 20 });
 t4.to("#js-slideContainer4", 0.5, { xPercent: 40 });
 t4.to("#js-slideContainer4", 0.5, { xPercent: 60 });
+t4.from(content4[0], 0.5, { opacity: 0, scale: 2.5 });
 t4.to("#js-slideContainer4", 0.5, { xPercent: 80 });
 
 new ScrollMagic.Scene({

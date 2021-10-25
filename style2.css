@@ -267,6 +267,140 @@
   animation-delay: 3s;
   opacity: 0;
 }
+.vertical1{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.vertical2{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.vertical3{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 3s;
+  opacity: 0;
+}
+.vertical4{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.vertical5{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: verti 5s linear infinite ;
+  animation-delay: 5s;
+  opacity: 0;
+}
+@keyframes verti {
+  0% {
+    opacity: 0;
+    top:0%;
+    left: 15%;
+  }
+  25%{
+    opacity: 1;
+    top:25%;
+    left: 15%;
+  }
+  50%{
+    opacity: 1;
+    top:50%;
+    left: 15%;
+  }
+  75%{
+    opacity: 1;
+    top:67.5%;
+    left: 15%;
+  }
+  100% {
+    top: 67.5%;
+    left: 0%;
+    opacity:0;
+  }
+}
+.travel1{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.travel2{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.travel3{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 3s;
+  opacity: 0;
+}
+.travel4{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.travel5{
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  animation: nextback 5s linear infinite ;
+  animation-delay: 5s;
+  opacity: 0;
+}
+@keyframes nextback {
+  0% {
+    opacity: 0;
+    top:65%;
+    right: 0%;
+  }
+  25%{
+    opacity: 1;
+    top:70%;
+    right: 22.5%;
+  }
+  50%{
+    opacity: 1;
+    top:65%;
+    right: 45%;
+  }
+  75%{
+    opacity: 1;
+    top:75%;
+    right: 67.5%;
+  }
+  100% {
+    top:65%;
+    right: 90%;
+    opacity: 0;
+  }
+}
 @keyframes next {
   0% {
     opacity: 0;
