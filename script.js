@@ -80,7 +80,36 @@ document.body.onscroll = function() {
         } else {
         document.querySelector("#lekpaiyai").dataset.active = 0;
         }
-        
+    // ตูด
+    var tude = document.getElementById("tude");
+        var tudetop = tude.offsetTop;
+        if (scrollY + viewHeight - 3500 >= tudetop){
+            document.querySelector("#tude").dataset.active = 1;
+        }
+        else {
+        document.querySelector("#tude").dataset.active = 0;
+        }
+
+        var shit = document.getElementById("shit").offsetTop;
+        if (scrollY + viewHeight - 150>= shit) {
+            document.querySelector("#shit").dataset.active = 1;
+        } else {
+        document.querySelector("#shit").dataset.active = 0;
+        }
+        var shit2 = document.getElementById("shit2").offsetTop;
+        if (scrollY + viewHeight - 600>= shit2) {
+            document.querySelector("#shit2").dataset.active = 1;
+        } else {
+        document.querySelector("#shit2").dataset.active = 0;
+        }
+
+        var freedom = document.getElementById("freedom").offsetTop;
+        if (scrollY + viewHeight -700 >= freedom) {
+            document.querySelector("#freedom").dataset.active = 1;
+        } else {
+        document.querySelector("#freedom").dataset.active = 0;
+        }
+
 };
 // กระเพอาะ
 function drop(type) {
