@@ -38,9 +38,12 @@ body {
 }
 
 p#title {
-    font-size: 2.6em;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 75px;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bolder;
     text-align: center;
+    color:white;
+    
 }
 
 #post {
@@ -114,19 +117,23 @@ p#title {
     background-color: rgb(196, 251, 249);
     color: black;
     border: 2px solid #3768c2;
+    font-size:1.4em;
+    font-weight: bold;
 }
 
 .button1:hover {
     background-color: #209be2;
     color: white;
+    border-radius: 30px;
 }
 
 .text_m {
     width: 30%;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     position: absolute;
     top: 50%;
-    /* opacity:0%; */
+    font-weight: bold;
+    font-size: 25px;
+    color:#00113f;
     transition: all 1s;
     transition-delay: 0.25s;
     left: 10%;
@@ -134,7 +141,9 @@ p#title {
 
 .text_m2 {
     width: 50%;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color:#00113f;
     position: absolute;
     top: 60%;
     /* opacity:0%; */
@@ -142,6 +151,7 @@ p#title {
     transition: all 1s;
     transition-delay: 0.25s;
     left: 50%;
+    padding-top:10px;
 }
 
 .saliva1 {
@@ -346,8 +356,11 @@ p#title {
     transition: all 1.5s;
     transition-delay: 0.25s;
     left: 35%;
-    font-size: 4rem;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 5rem;
+    font-weight: bolder;
+    font-size: 5em;
+    color:rgb(255, 66, 45);
+    text-shadow: 3px 3px 4px salmon;
     z-index: 2;
 }
 
@@ -359,6 +372,9 @@ p#title {
     /* opacity:0%; */
     transition: all 1.5s;
     transition-delay: 0.25s;
+    font-size: 3em;
+    font-weight: bold;
+    color:rgb(255, 66, 45);
     left: 35%;
     font-size: 2rem;
     z-index: 2;
@@ -473,6 +489,21 @@ p#title {
     transition: all 1s;
     transition-delay: 0.25s;
     text-align: start;
+    font-size:1.1em;
+}
+
+.textbox_header{
+    width: 300px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    position: absolute;
+    opacity: 0%;
+    transition: all 1s;
+    transition-delay: 0.25s;
+    text-align: start;
+    color:rgb(255, 73, 53);
+    font-weight: bolder;
+    font-size: 1.5em;
+    
 }
 
 #t1 {
