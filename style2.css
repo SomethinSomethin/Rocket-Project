@@ -914,5 +914,5 @@ background-color: rgb(202, 183, 183);
   animation: up-down2 4s infinite ;
 }
 .teststicky:hover {
-  opacity: 0.2;
+  opacity: 0.1;
 }
