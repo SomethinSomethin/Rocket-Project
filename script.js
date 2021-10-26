@@ -115,7 +115,7 @@ document.body.onscroll = function() {
 function drop(type) {
     console.log("clicked!");
     console.log(type);
-    var correct = [1, 2, 3];
+    var correct = [5];
     if (correct.includes(type)) {
         var d = document.querySelector("#d" + type);
         var check = document.querySelector("#check");
