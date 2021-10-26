@@ -111,10 +111,11 @@ document.body.onscroll = function() {
         }
 
 };
-// กระเพอาะ
+// กระเพาะ
 function drop(type) {
     console.log("clicked!");
     console.log(type);
+    var audio = document.querySelector("#plop");
     var correct = [5];
     if (correct.includes(type)) {
         var d = document.querySelector("#d" + type);
@@ -126,6 +127,7 @@ function drop(type) {
         setTimeout(function() {
             d.classList.remove("dropping");
             check.classList.remove("float");
+            audio.play();
         }, 2000);
     } else {
         var d = document.querySelector("#d" + type);
@@ -137,6 +139,7 @@ function drop(type) {
         setTimeout(function() {
             d.classList.remove("dropping");
             check.classList.remove("float");
+            audio.play();
         }, 2000);
     }
 }
