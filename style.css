@@ -17,8 +17,41 @@ body {
     transition: all 1s;
     text-align: center;
 }
+.modal-content{
+    margin-top: 20%;
+}
+.medium-modal{
+    font-size: 5vh;
+    font-weight: bold;
+    vertical-align: center;
+    width: 100%;
+  }
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100vh;
+    /* Full height */
+    background-color: rgb(196, 251, 249);
+    /* Black w/ opacity */
+    transition: 0.5s;
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle
 
-
+}
 /*-------------------------------------------------ปาก------------------------------------------*/
 
 :root {
