@@ -75,10 +75,10 @@ body {
 
 p#title {
     font-size: 65px;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px rgb(216, 11, 11);
     font-weight: bolder;
     text-align: center;
-    color:white;
+    color:rgb(253, 146, 146);
     
 }
 

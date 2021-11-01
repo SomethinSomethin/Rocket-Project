@@ -107,7 +107,7 @@ document.body.onscroll = function() {
         }
 
         var shit = document.getElementById("shit").offsetTop;
-        if (scrollY + viewHeight - 150>= shit) {
+        if (scrollY + viewHeight - 450>= shit) {
             document.querySelector("#shit").dataset.active = 1;
         } else {
         document.querySelector("#shit").dataset.active = 0;

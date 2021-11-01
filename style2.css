@@ -85,7 +85,7 @@
   align-items: center;
   background-size: cover;
   float: left;
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900672612244520971/image0.png");
+  background-image: url("IMG/finalyai.png");
 }
 .section-first {
   height: 100vh;
@@ -655,67 +655,67 @@
 
 
 .section:nth-child(1) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803263587745862/2.png");
+  background-image: url("IMG/yai1.png");
 }
 .section:nth-child(2) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803274308415508/3.png");
+  background-image: url("IMG/yai2.png");
 }
 .section:nth-child(3) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803279261872148/4.png");
+  background-image: url("IMG/yai3.png");
 }
 .section:nth-child(4) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803291450519592/5.png");
+  background-image: url("IMG/yai4.png");
 }
 .section:nth-child(5) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809544381833236/6edit2.png");
+  background-image: url("IMG/yai5.png");
 }
 
 .section2:nth-child(1) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809444326715422/11edit2.png");
+  background-image: url("IMG/yai6.png");
 }
 .section2:nth-child(2) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803291450519592/5.png");
+  background-image: url("IMG/yai7.png");
 }
 .section2:nth-child(3) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803279261872148/4.png"  );
+  background-image: url("IMG/yai8.png");
 }
 .section2:nth-child(4) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894803274308415508/3.png");
+  background-image: url("IMG/yai9.png");
 }
 .section2:nth-child(5) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/894809510378631168/7edit2.png");
+  background-image: url("IMG/yai10.png");
 }
 
 .section3:nth-child(1) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666505107222558/S2.png");
+  background-image: url("IMG/lek1.png");
 }
 .section3:nth-child(2) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666520802299914/S3.png");
+  background-image: url("IMG/lek2.png");
 }
 .section3:nth-child(3) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666559809355776/S4.png");
+  background-image: url("IMG/lek3.png");
 }
 .section3:nth-child(4) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666588825522186/S5.png");
+  background-image: url("IMG/lek4.png");
 }
 .section3:nth-child(5) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/901451075566043196/s6.png");
+  background-image: url("IMG/lek5.png");
 }
 
 .section4:nth-child(1) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/901451079718416424/s7.png");
+  background-image: url("IMG/lek6.png");
 }
 .section4:nth-child(2) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666652067246140/S8.png");
+  background-image: url("IMG/lek7.png");
 }
 .section4:nth-child(3) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666679799980062/S9.png"  );
+  background-image: url("IMG/lek8.png");
 }
 .section4:nth-child(4) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/900666690034073610/S10.png");
+  background-image: url("IMG/lek9.png");
 }
 .section4:nth-child(5) {
-  background-image: url("https://cdn.discordapp.com/attachments/874526652644884490/901464289980866560/11.png");
+  background-image: url("IMG/lek10.png");
 }
 
 .layer {
