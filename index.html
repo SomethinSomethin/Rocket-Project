@@ -23,10 +23,10 @@
                 
         </div>
     </div>
-    <audio  autoplay loop>
+    <!-- <audio  autoplay loop>
         <source src="audio/Lamer.mp3">
        Your browser does not support the audio element.
-       </audio>
+       </audio> -->
     <!--ปาก-->
     <div id="container" data-scene="mouth">
 
@@ -57,6 +57,14 @@
         </div>
         <div id="post">
             Y = <span id="yyy">0</span>
+            <button id="ASong" onClick="playPause()">
+                <audio
+                  src="audio/Lamer.mp3"
+                  autoplay
+                  loop
+                ></audio>
+                Song
+              </button>
         </div>
         <!--หลอดอาหาร-->
         <div id="esophagus" data-scene="acc" class="eso">

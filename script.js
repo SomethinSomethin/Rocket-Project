@@ -13,7 +13,19 @@ function pop(){
     modal.style.display = "block";  
     console.log(1);
 };
+// Music
+var aud = document.getElementById("ASong").children[0];
+  var isPlaying = false;
+  aud.pause();
 
+  function playPause() {
+    if (isPlaying) {
+      aud.pause();
+    } else {
+      aud.play();
+    }
+    isPlaying = !isPlaying;
+  }
 //scroll y check//
 let myScene = ['on', 'off'];
 let i = 1;
