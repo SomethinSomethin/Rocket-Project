@@ -1,3 +1,4 @@
+var freedom = 0;
 pop();
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
@@ -32,7 +33,7 @@ document.body.onscroll = function() {
     let viewHeight = window.innerHeight;
     newY = window.scrollY;
     console.log(newY);
-    document.querySelector("#yyy").innerText = scrollY;
+    // document.querySelector("#yyy").innerText = scrollY;
     let x = document.querySelector("#container");
     console.log(x.dataset)
         // ปาก
@@ -92,6 +93,7 @@ document.body.onscroll = function() {
     // กระเพาะ ---> ลำไส้เล็ก
     var lek = document.getElementById("lek");
     var lektop = lek.offsetTop;
+    
 
     if (scrollY + viewHeight - 650 >= lektop) {
         document.querySelector("#lek").dataset.active = 1;
@@ -130,10 +132,12 @@ document.body.onscroll = function() {
         document.querySelector("#shit2").dataset.active = 0;
         }
 
-        var freedom = document.getElementById("freedom").offsetTop;
+        freedom = document.getElementById("freedom").offsetTop;
         if (scrollY + viewHeight -700 >= freedom) {
             document.querySelector("#freedom").dataset.active = 1;
-        } else {
+            changeText()
+        } 
+        else {
         document.querySelector("#freedom").dataset.active = 0;
         }
 
@@ -155,7 +159,7 @@ function drop(type) {
             d.classList.remove("dropping");
             check.classList.remove("float");
             audio.play();
-        }, 2000);
+        }, 1000);
     } else {
         var d = document.querySelector("#d" + type);
         var check = document.querySelector("#check");
@@ -268,3 +272,63 @@ new ScrollMagic.Scene({
   .setPin("#js-wrapper2")
   .setTween(t2)
   .addTo(controller2);
+
+
+var isopensound = true
+  
+function showsound(){
+    console.log("MULTIMEDAIL GET A");
+    if(isopensound){
+        document.getElementById("ASong").classList.remove('soundoff');
+    }
+    else{
+        document.getElementById("ASong").classList.add('soundoff');
+    }
+    isopensound = !isopensound
+    
+}
+
+// import Fluketolungmatom
+var audio = document.getElementById("myaudio");
+audio.volume = 0.1;
+audio.controls = true; 
+
+var summarizes = ["ไม่ว่าจะเป็นอะไรก็ตาม", 
+"สุดท้ายทุกอย่างก็ต้องถูกย่อยสลาย",
+"ดังนั้น...",
+"รับประทานอาหารที่มีประโยชน์ต่อร่างกายของคุณ",
+"เพื่อเป็นประโยชน์ต่อร่างกายของคุณด้วยนะ"]
+
+var count;
+
+function changeText() {
+        count = 0
+        return timer(count);
+}
+
+
+function timer(counts) {
+    count = counts
+    
+    setTimeout(function() { 
+        summary = document.getElementById("summarize");
+        if (count < 5 ){ 
+            summary.innerHTML =  summarizes[count]
+            if(count % 2 == 0){
+                summary.className = "sectionTitle-tude changetext";
+            }
+            else{
+                summary.className = "sectionTitle-tude changetext2";
+            }
+            count++;
+            timer(count)
+        }
+        else{
+            count = 0;
+            return "finish";
+        }
+
+    }, 3000);
+    
+}  
+

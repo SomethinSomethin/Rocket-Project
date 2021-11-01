@@ -16,11 +16,11 @@
 <body onclick="scroll_allow('body')" id="body">
     <div id="modal1" class="modal">
         <div class="modal-content">
-                <p class="medium-modal" >อยากรู้มั้ยว่าระบบย่อยอาหารในร่างกายทำงานยังไงน่ะ...<br>
-                    กดส่วนไหนก็ได้ในหน้าเพื่อย้ายไปยังส่วนแรกของการย่อยของเรา!!!
-                </p>
+            <p class="medium-modal">อยากรู้มั้ยว่าระบบย่อยอาหารในร่างกายทำงานยังไงน่ะ...<br>
+                กดส่วนไหนก็ได้ในหน้าเพื่อย้ายไปยังส่วนแรกของการย่อยของเรา!!!
+            </p>
 
-                
+
         </div>
     </div>
     <!-- <audio  autoplay loop>
@@ -28,7 +28,7 @@
        Your browser does not support the audio element.
        </audio> -->
     <!--ปาก-->
-    <div id="container" data-scene="mouth">
+    <div id="container" data-scene="other">
 
         <div id="mouth" data-scene="off">
             <button class="button button1" id="botton1" onclick="pew()">ปล่อยน้ำลาย</button>
@@ -55,17 +55,18 @@
             <div class="saliva4"><img style="width: 100%;" src="IMG/น้ำลาย.png" alt=""></div>
             <div class="saliva5"><img style="width: 100%;" src="IMG/น้ำลาย.png" alt=""></div>
         </div>
-        <div id="post">
-            Y = <span id="yyy">0</span>
-            <button id="ASong" onClick="playPause()">
-                <audio
-                  src="audio/Lamer.mp3"
-                  autoplay
-                  loop
-                ></audio>
-                Song
-              </button>
+        <!-- music -->
+        <!-- // import Fluketolungmatom -->
+        <div id="iconsound" class="iconsound" onclick="showsound()">
+            <img class="volum"
+                src="https://media.discordapp.net/attachments/702031927837720627/904769100683808818/speaker-2488096_960_720.png">
+            <span id="yyy"></span>
+            <button id="ASong" onClick="playPause()" class="soundoff">
+                <audio src="audio/Lamer.mp3" autoplay loop controls class="mainaudio" id="myaudio"></audio>
+            </button>
+            </img>
         </div>
+
         <!--หลอดอาหาร-->
         <div id="esophagus" data-scene="acc" class="eso">
             <img src="IMG/หลอดอาหารซ้าย.png" id="eso_img_l">
@@ -92,12 +93,12 @@
             <div class="textbox_header" id="title">
                 <h1>ขอต้อนรับสู่<br>สถานีกระเพาะอาหาร</h1>
             </div>
-            <div class="textbox" id="t1">
+            <div class="textbox" id="t1" style="font-weight: bold;  font-size: 1.2vw;">
                 &emsp; กระเพาะอาหาร
                 เป็นอวัยวะของทางเดินอาหารที่เกี่ยวข้องกับกระบวนการย่อยอาหารที่ผ่านการเคี้ยวภายในช่องปากมาแล้ว
                 หน้าที่หลักของกระเพาะอาหารคือการย่อยสลายสารอาหารโมเลกุลใหญ่ให้เล็กลงเพื่อให้ง่ายต่อการดูดซึมที่ลำไส้เล็ก
             </div>
-            <div class="textbox" id="t2">
+            <div class="textbox" id="t2" style="font-weight: bold; font-size: 1.2vw;">
                 &emsp; กระเพาะอาหารทำหน้าที่ผลิตน้ำย่อยออกมา เพื่อย่อยอาหารพวกโปรตีนเท่านั้น
                 โดยกระเพาะอาหารจะบีบรัดตัวให้อาหารคลุกเคล้ากับน้ำย่อย
             </div>
@@ -108,7 +109,9 @@
                         <div id="wall1"></div>
                         <div id="check"><img id="tick" src="IMG/wrong.png"></div>
                         <div id="nutrient">
-                            <p>&emsp;จงเลือกสารอาหารอะไรที่ย่อยได้ในกระเพาะ</p>
+                            <div class="choice">
+                                <p style="font-size:1.5vw; font-weight:bolder;" style>จงเลือกสารอาหารอะไรที่ย่อยได้ในกระเพาะ</p>
+                            </div>
                             <div class="temp" onclick="drop(1)"><img style="width: 100%;" src="IMG/fruit.png"></div>
                             <div class="temp" onclick="drop(2)"><img style="width: 100%;" src="IMG/veggies.png"></div>
                             <div class="temp" onclick="drop(3)"><img style="width: 100%;" src="IMG/carbs.png"></div>
@@ -273,34 +276,18 @@
                 </section>
                 <section class="section">
                     <div class="content-ab">
-                        <div class="Bacteria1"><img
-                                src="IMG/bac.png"
-                                alt="" id="Bac1"></div>
-                        <div class="Bacteria2"><img
-                                src="IMG/bac.png"
-                                alt="" id="Bac2"></div>
-                        <div class="Bacteria3"><img
-                                src="IMG/bac.png"
-                                alt="" id="Bac3"></div>
-                        <div class="Bacteria4"><img
-                                src="IMG/bac.png"
-                                alt="" id="Bac4"></div>
+                        <div class="Bacteria1"><img src="IMG/bac.png" alt="" id="Bac1"></div>
+                        <div class="Bacteria2"><img src="IMG/bac.png" alt="" id="Bac2"></div>
+                        <div class="Bacteria3"><img src="IMG/bac.png" alt="" id="Bac3"></div>
+                        <div class="Bacteria4"><img src="IMG/bac.png" alt="" id="Bac4"></div>
                     </div>
                 </section>
                 <section class="section">
                     <div class="content-ab">
-                        <div class="Bacteria1"><img
-                                src="IMG/bac.png"
-                                alt="" id="Bac1"></div>
-                        <div class="Bacteria2"><img
-                                src="IMG/bac.png"
-                                alt="" id="Bac2"></div>
-                        <div class="Bacteria3"><img
-                                src="IMG/bac.png"
-                                alt="" id="Bac3"></div>
-                        <div class="Bacteria4"><img
-                                src="IMG/bac.png"
-                                alt="" id="Bac4"></div>
+                        <div class="Bacteria1"><img src="IMG/bac.png" alt="" id="Bac1"></div>
+                        <div class="Bacteria2"><img src="IMG/bac.png" alt="" id="Bac2"></div>
+                        <div class="Bacteria3"><img src="IMG/bac.png" alt="" id="Bac3"></div>
+                        <div class="Bacteria4"><img src="IMG/bac.png" alt="" id="Bac4"></div>
                     </div>
                 </section>
                 <section class="section">
@@ -327,44 +314,22 @@
                 </section>
                 <section class="section2">
                     <div class="content-ab">
-                        <div class="water1"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac1"></div>
-                        <div class="water2"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac2"></div>
-                        <div class="water3"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac3"></div>
-                        <div class="water4"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac4"></div>
-                        <div class="water5"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac4"></div>
-                        <div class="water6"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac4"></div>
-                        <div class="water7"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac4"></div>
+                        <div class="water1"><img src="IMG/น้ำลาย.png" alt="" id="Bac1"></div>
+                        <div class="water2"><img src="IMG/น้ำลาย.png" alt="" id="Bac2"></div>
+                        <div class="water3"><img src="IMG/น้ำลาย.png" alt="" id="Bac3"></div>
+                        <div class="water4"><img src="IMG/น้ำลาย.png" alt="" id="Bac4"></div>
+                        <div class="water5"><img src="IMG/น้ำลาย.png" alt="" id="Bac4"></div>
+                        <div class="water6"><img src="IMG/น้ำลาย.png" alt="" id="Bac4"></div>
+                        <div class="water7"><img src="IMG/น้ำลาย.png" alt="" id="Bac4"></div>
 
                     </div>
                 </section>
                 <section class="section2">
                     <div class="content-ab">
-                        <div class="water1"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac1"></div>
-                        <div class="water2"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac2"></div>
-                        <div class="water3"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac3"></div>
-                        <div class="water4"><img
-                                src="IMG/น้ำลาย.png"
-                                alt="" id="Bac4"></div>
+                        <div class="water1"><img src="IMG/น้ำลาย.png" alt="" id="Bac1"></div>
+                        <div class="water2"><img src="IMG/น้ำลาย.png" alt="" id="Bac2"></div>
+                        <div class="water3"><img src="IMG/น้ำลาย.png" alt="" id="Bac3"></div>
+                        <div class="water4"><img src="IMG/น้ำลาย.png" alt="" id="Bac4"></div>
                     </div>
                 </section>
                 <section class="section2">
@@ -392,7 +357,7 @@
             <div class="sections3">
                 <section class="section-end-small">
                     <div class="content-nochange">
-                        <h4 class="sectionTitle-lamsai" style="font-size: 70px; margin-bottom: 50%;">
+                        <h4 class="sectionTitle-lamsai" style="font-size: 4.5vw; margin-bottom: 50%;">
                             หลังจากผ่านการดูดซึมก็จะกลายเป็นอุจจาระรอการถ่ายออก</h4>
                     </div>
                 </section>
@@ -407,11 +372,13 @@
                 </section>
             </div>
         </div>
+        <!-- // import Fluketolungmatom -->
         <div class="wrapper" id="freedom">
             <section class="section-first-small">
                 <div class="content-tude">
-                    <h4 class="sectionTitle-tude" style="font-size: 50px;">สรุป<br>
-                    เมื่อเรารับประทานอาหารไปในร่างกายของเราจะมีระบบการย่อยที่ซับซ้อนกว่าที่เราคิดเอาไว้ไม่ว่าจะเป็นการย่อยอาหารในแต่ละชนิดที่เรากินเข้าไป</h4>
+                    <h4 class="sectionTitle-tude" id="summarize">
+                        อาหารที่เรารับประทานเข้าไป
+                    </h4>
                 </div>
             </section>
         </div>

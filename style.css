@@ -20,6 +20,39 @@ body {
     text-align: center;
     overflow: hidden;
 }
+.iconsound{
+    width: 80px;
+    height: 80px;
+    /* background-color: red; */
+    position: fixed;
+    bottom: 30;
+    right: 30;
+    z-index: 1;
+    /* display: none; */
+}
+
+.volum:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.soundoff{
+    display: none;
+}
+
+.volum{
+    width: 80px;
+    height: 80px;
+    bottom: 30;
+    right: 30;
+    position: fixed;
+    opacity: 0.2;
+}
+.mainaudio{
+    bottom: 20%;
+    right: 120%;
+    position: absolute;
+}
+
 .modal-content{
     margin-top: 20%;
 }
@@ -34,7 +67,7 @@ body {
     /* Hidden by default */ 
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 2;
     /* Sit on top */
     left: 0;
     top: 0;
@@ -148,13 +181,13 @@ p#title {
     z-index: 1;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
-
 .button1 {
     background-color: rgb(196, 251, 249);
     color: black;
     border: 2px solid #3768c2;
     font-size:1.4em;
     font-weight: bold;
+    opacity: 0;
 }
 
 .button1:hover {
@@ -173,6 +206,7 @@ p#title {
     transition: all 1s;
     transition-delay: 0.25s;
     left: 10%;
+    opacity: 0;
 }
 
 .text_m2 {
@@ -188,6 +222,7 @@ p#title {
     transition-delay: 0.25s;
     left: 50%;
     padding-top:10px;
+    opacity: 0;
 }
 
 .saliva1 {
@@ -604,17 +639,20 @@ p#title {
     transition: 1s;
     max-width: 700px;
 }
-
+.choice{
+    width: 100%;
+    background: rgb(102, 126, 126);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
 #nutrient {
-    width: 450px;
-    height: 60px;
     position: absolute;
     top: 700px;
     right: -50%;
-    border: 1px solid white;
-    background: rgb(102, 126, 126);
-    border-radius: 20px;
     transition: 1.3s;
+    color: rgb(253, 253, 253);
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
@@ -703,6 +741,8 @@ p#title {
     right: 8%;
 }
 
+
+
 @keyframes wobble {
     0% {
         height: 150px;
@@ -735,3 +775,27 @@ p#title {
         opacity: 100%;
     }
 }
+
+/*  import Fluketolungmatom */
+
+@keyframes textiscoming {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes textiscoming2 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+
+.changetext{
+    animation: textiscoming 1s linear;
+}
+
+.changetext2{
+    animation: textiscoming2 1s linear;
+}
+
+
+
