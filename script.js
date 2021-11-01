@@ -15,8 +15,7 @@ function pop(){
 };
 // Music
 var aud = document.getElementById("ASong").children[0];
-  var isPlaying = false;
-  aud.pause();
+  var isPlaying = true;
 
   function playPause() {
     if (isPlaying) {
