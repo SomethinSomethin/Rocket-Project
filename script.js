@@ -138,7 +138,7 @@ function drop(type) {
         var check = document.querySelector("#check");
         var img = document.querySelector("#tick");
         d.classList.add("dropping");
-        img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600929377124372/KuyYes.png");
+        img.setAttribute("src", "IMG/right.png");
         check.classList.add("float");
         setTimeout(function() {
             d.classList.remove("dropping");
@@ -150,7 +150,7 @@ function drop(type) {
         var check = document.querySelector("#check");
         var img = document.querySelector("#tick");
         d.classList.add("dropping");
-        img.setAttribute("src", "https://cdn.discordapp.com/attachments/874526652644884490/894600669649051738/Kuy.png");
+        img.setAttribute("src", "IMG/wrong.png");
         check.classList.add("float");
         setTimeout(function() {
             d.classList.remove("dropping");
