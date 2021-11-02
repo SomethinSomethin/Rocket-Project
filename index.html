@@ -10,7 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
+    <title>JimRobo</title>
 </head>
 
 <body onclick="scroll_allow('body')" id="body">
@@ -57,16 +57,31 @@
         </div>
         <!-- music -->
         <!-- // import Fluketolungmatom -->
+
         <div id="iconsound" class="iconsound" onclick="showsound()">
             <img class="volum"
                 src="https://media.discordapp.net/attachments/702031927837720627/904769100683808818/speaker-2488096_960_720.png">
             <span id="yyy"></span>
+
+            <!-- <iframe src="audio/Lamer.mp3" type="audio/mp3" allow="autoplay" id="audio"
+                style="display:none"></iframe>
+            <audio autoplay>
+                <source src="audio/Lamer.mp3" type="audio/mp3">
+            </audio> -->
+            <!-- --------------------------------------------------------------------------------------------------------------- -->
             <button id="ASong" onClick="playPause()" class="soundoff">
-                <audio src="audio/Lamer.mp3" autoplay loop controls class="mainaudio" id="myaudio"></audio>
+                <audio autoplay loop controls class="mainaudio" id="myaudio" type="audio/mp3">
+                    <source src="audio/Lamer.mp3" type="audio/ogg">
+                </audio>
             </button>
             </img>
         </div>
-
+        <!-- import mac -->
+        <script>
+             window.onload=async function(){
+                var mac = await document.getElementById("myaudio").play();
+             }
+        </script>
         <!--หลอดอาหาร-->
         <div id="esophagus" data-scene="acc" class="eso">
             <img src="IMG/หลอดอาหารซ้าย.png" id="eso_img_l">
@@ -110,7 +125,8 @@
                         <div id="check"><img id="tick" src="IMG/wrong.png"></div>
                         <div id="nutrient">
                             <div class="choice">
-                                <p style="font-size:1.5vw; font-weight:bolder;" style>จงเลือกสารอาหารอะไรที่ย่อยได้ในกระเพาะ</p>
+                                <p style="font-size:1.5vw; font-weight:bolder;" style>
+                                    จงเลือกสารอาหารอะไรที่ย่อยได้ในกระเพาะ</p>
                             </div>
                             <div class="temp" onclick="drop(1)"><img style="width: 100%;" src="IMG/fruit.png"></div>
                             <div class="temp" onclick="drop(2)"><img style="width: 100%;" src="IMG/veggies.png"></div>

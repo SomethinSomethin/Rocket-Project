@@ -18,14 +18,14 @@ function pop(){
 var aud = document.getElementById("ASong").children[0];
   var isPlaying = true;
 
-  function playPause() {
-    if (isPlaying) {
-      aud.pause();
-    } else {
-      aud.play();
-    }
-    isPlaying = !isPlaying;
-  }
+//   function playPause() {
+//     if (isPlaying) {
+//       aud.pause();
+//     } else {
+//       aud.play();
+//     }
+//     isPlaying = !isPlaying;
+//   }
 //scroll y check//
 let myScene = ['on', 'off'];
 let i = 1;
@@ -291,7 +291,10 @@ function showsound(){
 // import Fluketolungmatom
 var audio = document.getElementById("myaudio");
 audio.volume = 0.1;
-audio.controls = true; 
+audio.play();
+// audio.autoplay = true;
+// audio.load();
+// audio.controls = true; 
 
 var summarizes = ["ไม่ว่าจะเป็นอะไรก็ตาม", 
 "สุดท้ายทุกอย่างก็ต้องถูกย่อยสลาย",
