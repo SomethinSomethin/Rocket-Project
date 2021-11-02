@@ -159,7 +159,7 @@ function drop(type) {
             d.classList.remove("dropping");
             check.classList.remove("float");
             audio.play();
-        }, 1000);
+        }, 2000);
     } else {
         var d = document.querySelector("#d" + type);
         var check = document.querySelector("#check");

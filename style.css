@@ -763,7 +763,7 @@ p#title {
 
 @keyframes drop {
     100% {
-        top: 900px;
+        top: 95%;
         opacity: 100%;
         transform: rotate(50deg)
     }
