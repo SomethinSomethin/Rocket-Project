@@ -289,49 +289,49 @@ function showsound(){
 }
 
 // import Fluketolungmatom
-var audio = document.getElementById("myaudio");
-audio.volume = 0.1;
-audio.play();
-// audio.autoplay = true;
-// audio.load();
-// audio.controls = true; 
+// var audio = document.getElementById("myaudio");
+// audio.volume = 0.1;
+// audio.play();
+// // audio.autoplay = true;
+// // audio.load();
+// // audio.controls = true; 
 
-var summarizes = ["ไม่ว่าจะเป็นอะไรก็ตาม", 
-"สุดท้ายทุกอย่างก็ต้องถูกย่อยสลาย",
-"ดังนั้น...",
-"รับประทานอาหารที่มีประโยชน์ต่อร่างกายของคุณ",
-"เพื่อเป็นประโยชน์ต่อร่างกายของคุณด้วยนะ"]
+// var summarizes = ["ไม่ว่าจะเป็นอะไรก็ตาม", 
+// "สุดท้ายทุกอย่างก็ต้องถูกย่อยสลาย",
+// "ดังนั้น...",
+// "รับประทานอาหารที่มีประโยชน์ต่อร่างกายของคุณ",
+// "เพื่อเป็นประโยชน์ต่อร่างกายของคุณด้วยนะ"]
 
-var count;
+// var count;
 
-function changeText() {
-        count = 0
-        return timer(count);
-}
+// function changeText() {
+//         count = 0
+//         return timer(count);
+// }
 
 
-function timer(counts) {
-    count = counts
+// function timer(counts) {
+//     count = counts
     
-    setTimeout(function() { 
-        summary = document.getElementById("summarize");
-        if (count < 5 ){ 
-            summary.innerHTML =  summarizes[count]
-            if(count % 2 == 0){
-                summary.className = "sectionTitle-tude changetext";
-            }
-            else{
-                summary.className = "sectionTitle-tude changetext2";
-            }
-            count++;
-            timer(count)
-        }
-        else{
-            count = 0;
-            return "finish";
-        }
+//     setTimeout(function() { 
+//         summary = document.getElementById("summarize");
+//         if (count < 5 ){ 
+//             summary.innerHTML =  summarizes[count]
+//             if(count % 2 == 0){
+//                 summary.className = "sectionTitle-tude changetext";
+//             }
+//             else{
+//                 summary.className = "sectionTitle-tude changetext2";
+//             }
+//             count++;
+//             timer(count)
+//         }
+//         else{
+//             count = 0;
+//             return "finish";
+//         }
 
-    }, 3000);
+//     }, 3000);
     
-}  
+// }  
 
