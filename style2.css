@@ -909,13 +909,14 @@ background-color: hsl(0, 71%, 65%);
   transition: all 8s;
   top:100%;
 }
-#freedom[data-active="0"].content-tude {
-  transition: all 0.8s;
+#freedom[data-active="0"] .content-tude {
+  transition: all 0.5s;
   transform: scale(0);
+  color: black;
   opacity: 0;
 }
 #freedom[data-active="1"] .content-tude {
-  transition: all 0.8s;
+  transition: all 0.5s;
   transform: scale(1);
   color: black;
   opacity: 1;
