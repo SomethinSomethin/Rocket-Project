@@ -665,7 +665,7 @@ p#title {
 #acid {
     width: 100%;
     bottom: 0;
-    background: linear-gradient( hsl(47, 97%, 50%), hsl(47, 97%, 80%) );
+    background: linear-gradient( hsl(47, 100%, 70%) 40%, #f6c0ba );
     position: absolute;
     transition: 1s;
 }
