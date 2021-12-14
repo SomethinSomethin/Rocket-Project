@@ -842,7 +842,7 @@
   }
 }
 #yai .wrapper{
-  background-color: rgb(202, 183, 183);
+  background-color: hsl(0, 71%, 65%);
 }
 #lek[data-active="0"] .wrapper {
   background-color: #f6c0ba;
@@ -865,7 +865,7 @@ background-color: rgb(236, 142, 142);
 transition: all 0.7s;
 }
 #lekpaiyai[data-active="1"] .wrapper {
-background-color: rgb(202, 183, 183);
+background-color: hsl(0, 71%, 65%);
   transition: all 0.7s;
 }
 #lekpaiyai[data-active="0"] .sectionTitle-lamsai {
@@ -878,14 +878,14 @@ background-color: rgb(202, 183, 183);
 }
 
 #tude{
-  background-color: rgb(202, 183, 183);
+  background-color: hsl(0, 71%, 65%);
 }
 #tude[data-active="0"]  {
-  background-color: rgb(202, 183, 183);
+  background-color: hsl(0, 71%, 65%);
   transition: all 0.6s;
 }
 #tude[data-active="1"]  {
-  background-color: white;
+  background-color: hsl(179, 12%, 83%);
   transition: all 0.6s;
 }
 
@@ -909,13 +909,14 @@ background-color: rgb(202, 183, 183);
   transition: all 8s;
   top:100%;
 }
-#freedom[data-active="0"].content-tude {
-  transition: all 0.8s;
+#freedom[data-active="0"] .content-tude {
+  transition: all 0.5s;
   transform: scale(0);
+  color: black;
   opacity: 0;
 }
 #freedom[data-active="1"] .content-tude {
-  transition: all 0.8s;
+  transition: all 0.5s;
   transform: scale(1);
   color: black;
   opacity: 1;

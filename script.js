@@ -120,7 +120,7 @@ document.body.onscroll = function() {
         }
 
         var shit = document.getElementById("shit").offsetTop;
-        if (scrollY + viewHeight - 450>= shit) {
+        if (scrollY + viewHeight - 400>= shit) {
             document.querySelector("#shit").dataset.active = 1;
         } else {
         document.querySelector("#shit").dataset.active = 0;
@@ -135,7 +135,6 @@ document.body.onscroll = function() {
         freedom = document.getElementById("freedom").offsetTop;
         if (scrollY + viewHeight -700 >= freedom) {
             document.querySelector("#freedom").dataset.active = 1;
-            changeText()
         } 
         else {
         document.querySelector("#freedom").dataset.active = 0;
@@ -287,51 +286,4 @@ function showsound(){
     isopensound = !isopensound
     
 }
-
-// import Fluketolungmatom
-var audio = document.getElementById("myaudio");
-audio.volume = 0.1;
-audio.play();
-// audio.autoplay = true;
-// audio.load();
-// audio.controls = true; 
-
-var summarizes = ["ไม่ว่าจะเป็นอะไรก็ตาม", 
-"สุดท้ายทุกอย่างก็ต้องถูกย่อยสลาย",
-"ดังนั้น...",
-"รับประทานอาหารที่มีประโยชน์ต่อร่างกายของคุณ",
-"เพื่อเป็นประโยชน์ต่อร่างกายของคุณด้วยนะ"]
-
-var count;
-
-function changeText() {
-        count = 0
-        return timer(count);
-}
-
-
-function timer(counts) {
-    count = counts
-    
-    setTimeout(function() { 
-        summary = document.getElementById("summarize");
-        if (count < 5 ){ 
-            summary.innerHTML =  summarizes[count]
-            if(count % 2 == 0){
-                summary.className = "sectionTitle-tude changetext";
-            }
-            else{
-                summary.className = "sectionTitle-tude changetext2";
-            }
-            count++;
-            timer(count)
-        }
-        else{
-            count = 0;
-            return "finish";
-        }
-
-    }, 3000);
-    
-}  
 
